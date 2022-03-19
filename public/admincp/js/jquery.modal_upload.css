@@ -1,0 +1,253 @@
+.up-mfct-popup {
+    height: 100%;
+}
+.upload-mfct-popup {
+    height: 100%;
+    position: relative;
+}
+.tabs-upload-pop {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.tabs-content.tab-con-mfu.clearfix {
+    height: 100%;
+}
+.drop-zone-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px 20px 20px 20px;
+}
+.cell-drop-xone {
+    display: table;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.cell-drop-xone.dropbox-canvas {
+    border: 2px dotted #ccc;
+}
+.ct-drop-zone {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn-box-save-mf-uldrop {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    padding: 10px 0;
+}
+
+.head-menu-conten{float:left;width:100%;background: #f9f9f9;background: -moz-linear-gradient(top, #f9f9f9 0%, #f4f4f4 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#f4f4f4));background: -webkit-linear-gradient(top, #f9f9f9 0%,#f4f4f4 100%);background: -o-linear-gradient(top, #f9f9f9 0%,#f4f4f4 100%);background: -ms-linear-gradient(top, #f9f9f9 0%,#f4f4f4 100%);background: linear-gradient(to bottom, #f9f9f9 0%,#f4f4f4 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f4f4f4',GradientType=0 );
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}.head-menu-conten>li{float:left}.head-menu-conten>li>a{display:block;padding:10px 20px;color:#ccc;font-weight:bold;text-transform:capitalize}.head-menu-conten>li.active>a,.head-menu-conten>li>a:hover{color:#00aff0;border-bottom:1px solid #00aff0}
+.tabs-item-mfu{display: none;height: 100%;}
+.tabs-item-mfu.active{display: block;}
+.upload-oneshop-popup{background-color: #FFF}
+.inner-preview-img-box {
+    padding: 10px;
+    position: relative;
+}
+.image-holder {
+    padding: 0 0 0 30px;
+    border: 1px solid #00c0ef;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+.image-holder .lb-pic-ca{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+    padding: 5px 10px;
+}
+.panel-left-mnf {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    width: 30px;
+        background: #00c0ef;
+}
+.btn-upload-image input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: block
+}
+.btn-upload-image, .btn-continua-mf-updrop, .btn-cancel-snapshot{
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px;
+    background: #87e0fd;
+    background: -moz-linear-gradient(top, #87e0fd 0%, #53cbf1 40%, #05abe0 100%);
+    background: -webkit-linear-gradient(top, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 );
+    color: #FFF;
+    border-radius: 3px;
+    font-size: 12px;
+        border: 1px solid #666;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn-save-mf-upchoose, .btn-save-mf-updrop, .btn-preview-snapshot, .btn-save-snapshot, .btn-save-mf-ullibrary{
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px;
+    background: #499bea;
+    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%);
+    background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%);
+    background: linear-gradient(to bottom, #499bea 0%,#207ce5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
+    color: #FFF;
+    border-radius: 3px;
+    font-size: 12px;
+        border: 1px solid #666;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.btn-remove-img-mful {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background: #26c9f1;
+    color: #f9f9f9;
+    cursor: pointer;
+}
+.input-check-img-mful {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background: #FFF;
+    padding: 5px 0;
+}
+.progress-holder{position: absolute;left: 30px;bottom: 0;right: 10px}
+.dropbox-end {
+    height: 100%;
+    overflow: scroll;
+}
+
+.cam-zone-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0 40px 0;
+}
+.cell-cam-xone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+}
+.control-cam-xone {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.txt-ss-cam{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: -15px 0 0 -100px;
+}
+.pre_take_buttons, .post_take_buttons {
+    text-align: center;
+}
+
+.cell-library-zone {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.btn-box-save-mf-ullibrary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+        padding: 10px 20px;
+}
+.ct-library-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0 40px 0;
+}
+.loadmore-img-on-library {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+a.btn-load-more-im-library {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    background: #3c8dbc;
+    color: #FFF;
+}
+.list-img-on-library {
+    margin: 0;
+    padding: 10px 20px;
+    list-style: none;
+}
+.wrap-img-mnf {
+    padding: 10px;
+    height: 150px;
+    overflow: hidden;
+    border: 1px solid #26c9f1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+span.lb-pic-ca {
+    color: #26c9f1;
+}
+div#cam-mf-canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.shipzone-price_type{display: none;}
+.bd-ship-zone {
+    padding: 0 0 0 20px;
+}
+.wrap-flat-rate {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.wrap-flat-rate+.wrap-flat-rate{margin-top: 10px}
+.wrap-ship-zone {
+    padding: 0 0 0 20px;
+}
+.col-conditions+.col-conditions{margin-top: 10px}

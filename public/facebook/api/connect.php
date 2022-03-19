@@ -1,0 +1,12 @@
+<?php
+$servername = "localhost";
+$username = "etrip4ucrm";
+$password = "etrip4ucrm@123";
+$dbname = "etrip_crm";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+mysqli_set_charset($conn, "utf8");
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 

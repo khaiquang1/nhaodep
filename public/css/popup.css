@@ -1,0 +1,244 @@
+#hana-popchat{z-index:0!important; display:none!important}
+#scrollUp-text{z-index:0!important; display:none!important}
+.fastercrmBox .hotline {
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    z-index: 9999999;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 50px;
+}
+.Phone.is-animating {
+    animation: phone-outer 3000ms infinite;
+}
+.fastercrmBox .hotline .Phone::before {
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 1;
+    transform: translate3d(0,0,0) scale(0);
+}
+.fastercrmBox .hotline .Phone::after {
+    top: -3px;
+    left: -2px;
+    width: 60px;
+    height: 60px;
+    background: url('//fastercrm.com/img/widget_icon_click_to_call.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translate3d(0,0,0);
+}
+.fastercrmBox .hotline .Phone::before, .fastercrmBox .hotline .Phone::after {
+    position: absolute;
+    content: "";
+}
+.fastercrmBox .hotline .Phone {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 0 rgba(52,152,219,0), 0 0.05em 0.1em rgba(0,0,0,.2);
+    transform: translate3d(0,0,0) scale(1);
+}
+
+.fb_dialog{
+    background: #fff;
+    border-radius: 50%;
+    bottom: 91px!important;
+    display: inline;
+    height: 60px!important;
+    padding: 0px;
+    position: fixed;
+    right: 14px!important;
+    top: auto;
+    width: 60px!important;
+    z-index: 2147483646;
+    background: none;
+}
+
+.fastercrmBox  .map {
+    position: fixed;
+    bottom: 160px;
+    right: 18px;
+    z-index: 9999999;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 50px;
+}
+.Mapaddress.is-animating {
+    animation: phone-outer 3000ms infinite;
+}
+.fastercrmBox .map .Mapaddress::before {
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 1;
+    transform: translate3d(0,0,0) scale(0);
+}
+.fastercrmBox .map .Mapaddress::after {
+    top: -3px;
+    left: -2px;
+    width: 60px;
+    height: 60px;
+    background: url('//fastercrm.com/img/widget_icon_map.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translate3d(0,0,0);
+}
+.fastercrmBox  .map .Mapaddress::before, .map .Mapaddress::after {
+    position: absolute;
+    content: "";
+}
+.fastercrmBox .map .Mapaddress {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 0 rgba(52,152,219,0), 0 0.05em 0.1em rgba(0,0,0,.2);
+    transform: translate3d(0,0,0) scale(1);
+}
+
+.fastercrmBox .facebook {
+    position: fixed;
+    bottom: 90px;
+    right: 18px;
+    z-index: 9999999;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 50px;
+}
+.Facebookchat.is-animating {
+    animation: phone-outer 3000ms infinite;
+}
+.fastercrmBox  .facebook .Facebookchat::before {
+    top: -3px;
+    left: -2px;
+    width: 1em;
+    height: 1em;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 1;
+    transform: translate3d(0,0,0) scale(0);
+}
+.fastercrmBox  .facebook .Facebookchat::after {
+    top: -3px;
+    left: -2px;
+    width: 60px;
+    height: 60px;
+    background: url('//fastercrm.com/img/widget_icon_messenger.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: translate3d(0,0,0);
+}
+.fastercrmBox .facebook .Facebookchat::before, .fastercrmBox .facebook .Facebookchat::after {
+    position: absolute;
+    content: "";
+}
+.fastercrmBox .facebook .Facebookchat {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    background-color: #fff;
+    border-radius: 45px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 0 rgba(52,152,219,0), 0 0.05em 0.1em rgba(0,0,0,.2);
+    transform: translate3d(0,0,0) scale(1);
+}
+.fb_dialog_content iframe {
+    margin: 0px 12px;
+    padding: 0px;
+    position: fixed!important;
+    z-index: 2147483644;
+    bottom: 90px!important;
+    top: auto!important;
+    right: 0!important;
+    height: 60px!important;
+    width: 60px!important;
+    border-radius: 29px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+    background: none;
+    display: block;
+    background: none;
+}
+@media (max-width: 767px) {
+    .fastercrmBox{
+        position: fixed; bottom: 0; height: 60px; z-index: 999999; width: 61%; margin: 0 auto; left: 20%;
+    }
+    .fastercrmBox .map {
+        position: absolute;
+        bottom: 5px;
+        right: 18px;
+        z-index: 9999999;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+    }
+    .fastercrmBox .hotline {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        left: 0;
+        z-index: 9999999;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+    }
+    .fb_dialog_content iframe {
+        margin: 0px 12px;
+        padding: 0px;
+        position: absolute!important;
+        z-index: 2147483644;
+        bottom: 5px!important;
+        top: auto!important;
+        left: 36%;
+        right: 50%!important;
+        height: 60px!important;
+        width: 60px!important;
+        border-radius: 29px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+        background: none;
+        display: block;
+        background: none;
+    }
+    .fastercrmBox .facebook {
+        position: absolute;
+        bottom: 5px;
+        right: 40%;
+        z-index: 9999999;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .fastercrmBox .facebook .Facebookchat::after {
+        top: -3px;
+        left: -2px;
+        width: 60px;
+        height: 60px;
+        background: url('//fastercrm.com/img/widget_icon_messenger.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        transform: translate3d(0,0,0);
+    }
+    
+}

@@ -1,0 +1,51 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'companies' => 'Компании', 
+'new' => 'Новая компания', 
+'edit' => 'Изменить компанию', 
+'delete' => 'Удалить компанию', 
+'details' => 'Сведения о компании', 
+'company_name' => 'название компании', 
+'contact_person' => 'Контактное лицо', 
+'phone' => 'Телефон', 
+'email' => 'Эл. адрес', 
+'website' => 'вебсайт компании', 
+'address' => 'Адрес', 
+'mobile' => 'мобильный', 
+'fax' => 'факс', 
+'sales_team_id' => 'Отдел продаж', 
+'main_contact_person' => 'Основное контактное лицо', 
+'company_avatar_file' => 'Компания аватар', 
+'cash_information' => 'Денежные средства', 
+'customer_activities' => 'Деятельность клиентов', 
+'total_sales' => 'Тотальная распродажа', 
+'open_invoices' => 'Открыть счета-фактуры', 
+'overdue_invoices' => 'Просроченные счета', 
+'paid_invoices' => 'Платные счета-фактуры', 
+'quotations_total' => 'Всего котировок', 
+'contracts' => 'контракты', 
+'emails' => 'Сообщения электронной почты', 
+'quotations' => 'цитаты', 
+'invoices' => 'Счета-фактуры', 
+'salesorder' => 'Заказ клиента', 
+'meeting' => 'Встреча', 
+'calls' => 'Вызовы', 
+'customer_details' => 'Информация о клиенте', 
+'select_city' => 'Выберите город', 
+'select_state' => 'Выберите состояние', 
+'select_country' => 'Выберите страну', 
+'country' => 'Страна', 
+'state' => 'состояние', 
+'city' => 'город', 
+'company_avatar' => 'логотип', 
+'create_company' => 'Создать компанию', 
+'total_sales_orders' => 'Общие заказы на продажу', 
+'total_invoices' => 'Всего счетов-фактур', 
+'company_activities' => 'Деятельность компании', 
+
+ 
+];

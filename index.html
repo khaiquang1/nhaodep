@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kính Đơn Tròng -  Mắt Việt</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+    <link href="css/spacings.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <!-- <link href="images/favicon.png" rel="icon">  -->
+    <link rel="shortcut icon" href="https://matviet.vn/icon/logo180.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="fancybox/dist/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        function writeCookie(name, value, days) {
+            var date, expires;
+            if (days) {
+                date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toGMTString()
+            } else {
+                expires = ""
+            }
+            document.cookie = name + "=" + value + expires + "; path=/"
+        }
+
+        function readCookie(name) {
+            var i, c, ca, nameEQ = name + "=";
+            ca = document.cookie.split(';');
+            for (i = 0; i < ca.length; i++) {
+                c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length)
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length, c.length)
+                }
+            }
+            return ''
+        }
+
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
+        var utm_source = getParameterByName('utm_source');
+        var utm_medium = getParameterByName('utm_medium');
+        var utm_campaign = getParameterByName('utm_campaign');
+
+        if (utm_source != "") {
+            writeCookie('utm_source', utm_source, 30);
+            writeCookie('utm_medium', utm_medium, 30);
+            writeCookie('utm_campaign', utm_campaign, 30);
+        }
+    </script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53684568-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53684568-4');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WMZ4PM2');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body data-spy="scroll" data-target="#active_list" data-offset="80">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMZ4PM2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <!-- menu fix-->
+    <div class="menu-fix" id="menu-fix">
+        <div class="menu-img menu-f1" id="1">
+            <a href="#giai-phap">
+                <figure>
+                    <img src="images/cong-nghe-da-trong.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu">Giải pháp</p>
+            </a>
+        </div>
+        <div class="menu-img menu-f2" id="2">
+            <a href="#cong-nghe">
+                <figure>
+                    <img src="images/thuonghieu_so1tg.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu">Thương hiệu</p>
+            </a>
+        </div>
+        <div class="menu-img menu-f3" id="3">
+            <a href="#intro">
+                <figure>
+                    <img src="images/giai-phap-kinh-da-trong.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu">Sản phẩm</p>
+            </a>
+        </div>
+        <div class="menu-img menu-f4" id="4">
+            <a href="#uudai">
+                <figure>
+                    <img src="images/ct-khuyen-mai.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu" >Ưu đãi</p>
+            </a>
+        </div>
+         <div class="menu-img menu-f5" id="5">
+            <a href="#do-mat" class="">
+                <figure>
+                    <img src="images/do-kham-khuc-xa.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu">Đo mắt</p>
+            </a>
+        </div>
+        <div class="menu-img menu-f6" id="6">
+            <a href="https://matviet.vn/cua-hang/" class="btn-step1">
+                <figure>
+                    <img src="images/hethong_2.png" class="img-fix-menu">
+                </figure>
+                <p class="text-fix-menu">Cửa hàng</p>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- header -->
+    <div class="header" id="header">
+        <div class="container-fluid">
+            <!-- <div class="row logo-header">
+                <img src="images/logo.png" class="logo">
+            </div> -->
+
+            <div class="row header-content">
+                <img src="images/img_man.png" class="img_man">
+                <img src="images/img_woman.png" class="img_woman">
+                <a href="https://matviet.vn/cua-hang/" class="btn-step1">
+                    <img src="images/img_header.png" class="img_text">
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="container">
+
+                    <div class="row menu-header hidden-xs">
+                        <div class="item item-4">
+                            <a href="#giai-phap">
+                                <div class="img-item">
+                                    <img src="images/cong-nghe-da-trong.png" class="img-menu">
+                                </div>
+                                <div class="text-item-menu">
+                                    <p>Giải pháp</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="item item-3">
+                            <a href="#cong-nghe">
+                                <div class="img-item">
+                                    <img src="images/thuonghieu_so1tg.png" class="img-menu">
+                                </div>
+                                <div class="text-item-menu">
+                                    <p>Thương hiệu</p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="item item-2">
+                            <a href="#intro">
+                                <div class="img-item">
+                                    <img src="images/giai-phap-kinh-da-trong.png" class="img-menu icon_glass">
+                                </div>
+                                <div class="text-item-menu">
+                                    <!-- <p>Giải pháp</p> -->
+                                    <p>Sản phẩm nổi bật</p>
+                                </div>
+                            </a>
+                        </div>
+                       
+                        <div class="item item-5">
+                            <a href="#uudai">
+                                <div class="img-item">
+                                    <img src="images/ct-khuyen-mai.png" class="img-menu">
+                                </div>
+                                <div class="text-item-menu">
+                                    <p>Chương trình ưu đãi</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item item-1">
+                            <a href="#do-mat">
+                                <div class="img-item">
+                                    <img src="images/do-kham-khuc-xa.png" class="img-menu">
+                                </div>
+                                <div class="text-item-menu">
+                                    <p>Đo mắt</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item item-6">
+                            <a href="https://matviet.vn/cua-hang/">
+                                <div class="img-item btn-step1">
+                                    <img src="images/hethong_2.png" class="img-menu">
+                                </div>
+                                <div class="text-item-menu btn-step2">
+                                    <p>Hệ thống cửa hàng</p>
+                                    <!-- <p>Hệ thống Mắt Việt</p> -->
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row hidden-lg hidden-md hidden-sm">
+                        <div class="col-xs-12">
+                            <div class="swiper-container lydo_slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item item-2">
+                                            <a href="#giai-phap">
+                                                <div class="img-item">
+                                                    <img src="images/cong-nghe-da-trong.png" class="img-menu">
+                                                </div>
+                                                <div class="text-item-menu">
+                                                    <p>Giải pháp</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item item-3">
+                                            <a href="#cong-nghe">
+                                                <div class="img-item">
+                                                    <img src="images/thuonghieu_so1tg.png" class="img-menu">
+                                                </div>
+                                                <div class="text-item-menu">
+                                                    <p>Thương hiệu</p>
+                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item item-4">
+                                            <a href="#intro">
+                                                <div class="img-item">
+                                                    <img src="images/giai-phap-kinh-da-trong.png" class="img-menu glass">
+                                                </div>
+                                                <div class="text-item-menu">
+                                                    <!-- <p>Công nghệ </p> -->
+                                                    <p>Sản phẩm nổi bật</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item item-5">
+                                            <a href="#uudai">
+                                                <div class="img-item">
+                                                    <img src="images/ct-khuyen-mai.png" class="img-menu">
+                                                </div>
+                                                <div class="text-item-menu">
+                                                    <p>Chương trình ưu đãi</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item item-1">
+                                            <a href="#do-mat">
+                                                <div class="img-item">
+                                                    <img src="images/do-kham-khuc-xa.png" class="img-menu">
+                                                </div>
+                                                <div class="text-item-menu">
+                                                    <p>Đo mắt</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item item-6">
+                                            <a href="https://matviet.vn/cua-hang/">
+                                                <div class="img-item btn-step1">
+                                                    <img src="images/logo-mv-mobile.png" class="img-menu">
+                                                </div>
+                                                <div class="text-item-menu btn-step1">
+                                                    <p>Hệ thống cửa hàng</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class=" lydo_next"></div>
+                            <div class=" lydo_prev"></div>
+                        </div>
+                    </div>
+
+
+                    <hr class="line-page">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+   
+
+    <!-- ----------- -->
+
+<!-- Giải pháp -->
+    <div class="giai-phap target" id="giai-phap">
+        <div class="container">
+            <div class="row">
+                <p class="title">
+                    7 CÔNG DỤNG
+                </p>
+                <p class="sub_title">
+                    CHO TẦM NHÌN SẮC NÉT VÀ BẢO VỆ MẮT TOÀN DIỆN
+                </p>
+                <img src="images/line-sec2.png" class="line-sec2">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row_congdung">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal1">
+                        <img src="images/congdung_1.png" class="center-block congdung1">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal2">
+                        <img src="images/congdung_2.png" class="center-block congdung2">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal3">
+                        <img src="images/congdung_3.png" class="center-block congdung3">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal4">
+                        <img src="images/congdung_4.png" class="center-block congdung4">
+                    </figure>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="row row_congdung hidden-lg hidden-sm hidden-md">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal5">
+                        <img src="images/congdung_5.png" class="center-block congdung5">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal6">
+                        <img src="images/congdung_6.png" class="center-block congdung6">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 col-xs-offset-3">
+                    <figure data-toggle="modal" data-target="#Modal7">
+                        <img src="images/congdung_7.png" class="center-block congdung7">
+                    </figure>
+                </div>
+            </div>
+            <!-- pc -->
+            <div class="row row_congdung center-boxes hidden-xs">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal5">
+                        <img src="images/congdung_5.png" class="center-block congdung5">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal6">
+                        <img src="images/congdung_6.png" class="center-block congdung6">
+                    </figure>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <figure data-toggle="modal" data-target="#Modal7">
+                        <img src="images/congdung_7.png" class="center-block congdung7">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="btn-cua-hang">
+                    <a href="https://matviet.vn/cua-hang/">
+                        <p class="btn-step3">Tìm cửa hàng Mắt Việt gần bạn
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Công nghệ  -->
+    <div class="cong-nghe target" id="cong-nghe">
+        <div class="container">
+            <div class="row">
+                <p class="title">
+                    CHỌN TRÒNG KÍNH CHUYÊN DỤNG
+                </p>
+                <p class="sub_title">
+                    PHÙ HỢP VỚI NHU CẦU CÁ NHÂN
+                </p>
+                <img src="images/line-sec2.png" class="line-sec2">
+            </div>
+        </div>
+
+        <div class="container hidden-xs">
+            <div class="row row_luachon">
+                <div class="item_luachon">
+                    <figure>
+                        <img src="images/luachon_1.png" class="img_luachon1">
+                    </figure>
+                </div>
+                <div class="item_luachon">
+                    <figure>
+                        <img src="images/luachon_2.png" class="img_luachon2">
+                    </figure>
+                </div>
+                <div class="item_luachon">
+                    <figure>
+                        <img src="images/luachon.png" class="img_luachon3">
+                    </figure>
+                </div>
+                <div class="item_luachon">
+                    <figure>
+                        <img src="images/luachon_4.png" class="img_luachon4">
+                    </figure>
+                </div>
+                <div class="item_luachon">
+                    <figure>
+                        <img src="images/luachon_5.png" class="img_luachon5">
+                    </figure>
+                </div>
+            </div>
+            <div class="row hidden-xs">
+                <img id="pop_luachon1" src="images/trongkinh_pop1.png" class="popup_trongkinh">
+                <img id="pop_luachon2" src="images/trongkinh_pop2.png" class="popup_trongkinh">
+                <img id="pop_luachon3" src="images/trongkinh_pop3.png" class="popup_trongkinh">
+                <img id="pop_luachon4" src="images/trongkinh_pop4.png" class="popup_trongkinh">
+                <img id="pop_luachon5" src="images/trongkinh_pop5.png" class="popup_trongkinh">
+            </div>
+        </div>
+
+        <!-- mobile -->
+        <div class="container hidden-lg hidden-md hidden-sm">
+            <div class="row row_luachon_mb">
+                    <img id="pop_mb1" src="images/pop1_mobile1.png" class="popup_mb pmb1 center-block">
+                    <img id="pop_mb2" src="images/pop2_mobile.png" class="popup_mb pmb2">
+                    <img id="pop_mb3" src="images/pop3_mobile.png" class="popup_mb pmb3">
+                    <img id="pop_mb4" src="images/pop4_mobile.png" class="popup_mb pmb4">
+                    <img id="pop_mb5" src="images/pop5_mobile.png" class="popup_mb pmb5">
+                <div class="col-xs-12">
+                    <figure>
+                        <img src="images/luachon_1_mb.png" class="img_lc1">
+                    </figure>
+                </div>
+                <div class="col-xs-12">
+                    <figure>
+                        <img src="images/luachon_2_mb.png" class="img_lc2">
+                    </figure>
+                </div>
+                <div class="col-xs-12">
+                        <figure>
+                                <img src="images/luachon_3_mb.png" class="img_lc3">
+                            </figure>
+                </div>
+                <div class="col-xs-12">
+                        <figure>
+                                <img src="images/luachon_4_mb.png" class="img_lc4">
+                            </figure>
+                </div>
+                <div class="col-xs-12">
+                    <figure>
+                        <img src="images/luachon_5_mb.png" class="img_lc5">
+                    </figure>
+                </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="btn-cua-hang">
+                    <a href="https://matviet.vn/cua-hang/">
+                        <p class="btn-step4">Tìm cửa hàng Mắt Việt gần bạn
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!--  -->
+    <div class="intro target" id="intro">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <p class="title">
+                        CÁC SẢN PHẨM NỔI BẬT TẠI MẮT VIỆT
+                    </p>
+                    <img src="images/line-sec2.png" class="line-sec2">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="custom_carousel" class="carousel slide hidden-xs" data-ride="carousel" data-interval="false">
+                <!-- Wrapper for slides -->
+                <div class="controls">
+                    <ul class="nav">
+                        <li data-target="#custom_carousel" data-slide-to="0" id="video1" class="active">
+                            <img src="images/crizal_preven.png">
+                            <div class="ribbon1">
+                                    <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                    <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                            </div>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="1" id="video2">
+                            <img src="images/crizal_sapphie.png">
+                            <div class="ribbon2">
+                                    <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                    <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                            </div>
+                        </li>
+                        <li data-target="#custom_carousel" data-slide-to="2" id="video3">
+                            <img src="images/crizal_transition.png">
+                            <div class="ribbon3">
+                                    <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                    <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="hr_intro">
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="item-content">
+                                    <div class="text">
+                                        <img src="images/crizal_preven.png" class="img_intro">
+                                        <hr>
+                                        <p class="description">
+                                            Với công nghệ lọc ánh sáng xanh thông minh Light ScanTM của Crizal Prevencia có công dụng ngăn tia 
+                                            sáng xanh tím có hại, đồng thời cho phép tia sáng xanh ngọc có lợi đi qua, đảm bảo tối ưu cho sức khỏe của bạn. 
+                                        </p>
+                                        <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_3.png">
+                                            XEM THÊM
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <iframe id="play1" src="https://www.youtube.com/embed/4rZykwcO8jY?enablejsapi=1" frameborder="0" 
+                                            allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                    </div> 
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="item-content">
+                                    <div class="text">
+                                        <img src="images/crizal_sapphie.png" class="img_intro">
+                                        <hr>
+                                        <p class="description">
+                                            Với sự nghiên cứu và thiết kế mới lớp phủ chống chói, Công nghệ Đa góc 360* kết hợp cấu trúc lớp phủ kép và 
+                                            một quy trình tính toán mới, được thiết kế để giảm độ chói từ mọi hướng, bảo đảm cho bạn thị lực rõ và sắc nét nhất trong cuộc sống hằng ngày. 
+                                        </p>
+                                        <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_2.png">
+                                            XEM THÊM
+                                        </div>
+                                    </div>
+                                    <div class="video" >
+                                        <iframe id="play2" src="" frameborder="0" 
+                                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                    </div> 
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="item-content">
+                                    <div class="text">
+                                        <img src="images/crizal_transition.png" class="img_intro">
+                                        <hr>
+                                        <p class="description">
+                                            Tròng kính Crizal Transitions đảm bảo cho bạn một tầm nhìn hoàn hảo, tự tin thể hiện phong cách mọi lúc mọi nơi mà không 
+                                            cần dùng luân phiên 2 hay nhiều mắt kính: <br>
+                                            - Trong suốt và nhìn rõ khi trong nhà<br>
+                                            - Tốc độ đổi màu nhanh khi bắt gặp tia UV<br>
+                                            - Phù hợp với mọi lứa tuổi, kể cả trẻ em
+                                        </p>
+                                        <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_1.png">
+                                            XEM THÊM
+                                        </div>
+                                    </div>
+                                    <div class="video">
+                                        <iframe id="play3" src="" frameborder="0" 
+                                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>           
+                    </div> 
+                    
+                <!-- End Item -->
+                </div>
+                <!-- End Carousel Inner -->
+            </div>
+
+
+
+
+            <div class="row hidden-lg hidden-md hidden-sm">
+                    <div id="owl-3" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="top_item">
+                                <div class="ribbon1">
+                                        <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                        <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                                </div>
+                                <img src="images/crizal_preven.png" class="intro1">
+                            </div>
+                           
+                            <div class="item-content">
+                                <div class="text">
+                                    <!-- <img src="images/crizal_preven.png" class="img_intro">
+                                    <hr> -->
+                                    <p class="description">
+                                        Với công nghệ lọc ánh sáng xanh thông minh Light ScanTM của Crizal Prevencia có công dụng ngăn tia 
+                                        sáng xanh tím có hại, đồng thời cho phép tia sáng xanh ngọc có lợi đi qua, đảm bảo tối ưu cho sức khỏe của bạn. 
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_3.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video">
+                                    <iframe id="" src="https://www.youtube.com/embed/4rZykwcO8jY?enablejsapi=1" frameborder="0" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="top_item">
+                                <div class="ribbon1">
+                                        <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                        <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                                </div>
+                                <img src="images/crizal_sapphie.png" class="intro2">
+                            </div>
+                            <div class="item-content">
+                                <div class="text">
+                                    <!-- <img src="images/crizal_sapphie.png" class="img_intro">
+                                    <hr> -->
+                                    <p class="description">
+                                        Với sự nghiên cứu và thiết kế mới lớp phủ chống chói, Công nghệ Đa góc 360* kết hợp cấu trúc lớp phủ kép và 
+                                        một quy trình tính toán mới, được thiết kế để giảm độ chói từ mọi hướng, bảo đảm cho bạn thị lực rõ và sắc nét nhất trong cuộc sống hằng ngày. 
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_2.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video" >
+                                    <iframe id="" src="https://www.youtube.com/embed/1597DGh-fRA" frameborder="0" 
+                                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="top_item">
+                                <div class="ribbon1">
+                                        <img src="images/ribbon_tab_big.png" class="ribbon_big">
+                                        <img src="images/ribbon_tab_small.png" class="ribbon_small">
+                                </div>
+                                <img src="images/crizal_transition.png" class="intro3">
+                            </div>
+                            <div class="item-content">
+                                <div class="text">
+                                    <!-- <img src="images/crizal_transition.png" class="img_intro">
+                                    <hr> -->
+                                    <p class="description">
+                                        Tròng kính Crizal Transitions đảm bảo cho bạn một tầm nhìn hoàn hảo, tự tin thể hiện phong cách mọi lúc mọi nơi mà không 
+                                        cần dùng luân phiên 2 hay nhiều mắt kính: <br>
+                                        - Trong suốt và nhìn rõ khi trong nhà<br>
+                                        - Tốc độ đổi màu nhanh khi bắt gặp tia UV<br>
+                                        - Phù hợp với mọi lứa tuổi, kể cả trẻ em
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_1.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video">
+                                    <iframe id="" src="https://www.youtube.com/embed/Zh43FeSZVNE" frameborder="0" 
+                                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+<!-- 
+            <div class="container-fluid intro_mobile_content hidden-lg hidden-md hidden-sm">
+                <div class="row intro_mb1 intro_item_mb">
+                    <div class="item-content">
+                            <div class="text">
+                                    <img src="images/crizal_preven.png" class="img_intro">
+                                    <hr>
+                                    <p class="description">
+                                        Với công nghệ lọc ánh sáng xanh thông minh Light ScanTM của Crizal Prevencia có công dụng ngăn tia 
+                                        sáng xanh tím có hại, đồng thời cho phép tia sáng xanh ngọc có lợi đi qua, đảm bảo tối ưu cho sức khỏe của bạn. 
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_3.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video">
+                                    <iframe id="play1" src="https://www.youtube.com/embed/4rZykwcO8jY?enablejsapi=1" frameborder="0" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                    </div>
+                </div>
+                <div class="row intro_mb2 intro_item_mb">
+                    <div class="item-content">
+                            <div class="text">
+                                    <img src="images/crizal_sapphie.png" class="img_intro">
+                                    <hr>
+                                    <p class="description">
+                                        Với sự nghiên cứu và thiết kế mới lớp phủ chống chói, Công nghệ Đa góc 360* kết hợp cấu trúc lớp phủ kép và 
+                                        một quy trình tính toán mới, được thiết kế để giảm độ chói từ mọi hướng, bảo đảm cho bạn thị lực rõ và sắc nét nhất trong cuộc sống hằng ngày. 
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_2.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video" >
+                                    <iframe id="play2" src="" frameborder="0" 
+                                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                    </div>
+                </div>
+                <div class="row intro_mb3 intro_item_mb">
+                    <div class="item-content">
+                            <div class="text">
+                                    <img src="images/crizal_transition.png" class="img_intro">
+                                    <hr>
+                                    <p class="description">
+                                        Tròng kính Crizal Transitions đảm bảo cho bạn một tầm nhìn hoàn hảo, tự tin thể hiện phong cách mọi lúc mọi nơi mà không 
+                                        cần dùng luân phiên 2 hay nhiều mắt kính: <br>
+                                        - Trong suốt và nhìn rõ khi trong nhà<br>
+                                        - Tốc độ đổi màu nhanh khi bắt gặp tia UV<br>
+                                        - Phù hợp với mọi lứa tuổi, kể cả trẻ em
+                                    </p>
+                                    <div class="btn_xemthem" data-fancybox="images" href="images/xemthem_1.png">
+                                        XEM THÊM
+                                    </div>
+                                </div>
+                                <div class="video">
+                                    <iframe id="play3" src="" frameborder="0" 
+                                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                    </div>
+                </div>
+                
+            </div> -->
+
+        </div>
+
+        <!-- <div class="row row-btn-tab">
+            <div class="content">
+                <p class="title">Đo kính Varilux dễ dàng và nhanh chóng tại cửa hàng Mắt Việt gần bạn nhất!</p>
+                <div class="btn-tab">
+                    <a class="btn-step5" href="https://matviet.vn/cua-hang/">
+                        Tìm cửa hàng Mắt Việt gần bạn
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="btn-cua-hang">
+                    <a href="https://matviet.vn/cua-hang/">
+                        <p class="btn-step3">Tìm cửa hàng Mắt Việt gần bạn
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <hr class="line-page1">
+        </div>
+    </div> -->
+
+    <div class="uudai-tt">
+            <div class="container" style="text-align: center;">
+                    <div class="row">
+                        <div>
+                            <p class="title">
+                                SỞ HỮU KÍNH ĐƠN TRÒNG CAO CẤP VỚI ƯU ĐÃI ĐẶC BIỆT
+                            </p>
+                            <p class="sub_title">
+                                CHỈ CÓ TẠI MẮT VIỆT
+                            </p>
+                            <img src="images/line-sec2.png" class="line-uudai">
+                        </div>
+                    </div>
+            </div>
+
+    </div>
+
+    <!-- uu dai -->
+    
+    
+        <div class="uudai target" id="uudai">
+            <img src="images/img_woman_uudai.png" class="img_woman_uudai hidden-lg hidden-md hidden-sm">
+            <div class="row">
+                <div class="content-uudai">
+                    <img src="images/img_text_uudai.png" class="img_text_uudai">
+                    <img src="images/img_woman_uudai.png" class="img_woman_uudai hidden-xs">
+
+                    <script type="text/javascript" src="https://lh372.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+                    <script type="text/javascript" src="https://lh372.infusionsoft.com/app/timezone/timezoneInputJs?xid=82fa6a04caae7897503c680ec99556b1"></script>
+                    <script src="https://lh372.infusionsoft.com/app/webTracking/getTrackingCode?b=1.70.0.75009" type="text/javascript"></script>
+
+                    <div class="text" id="webformErrors" name="errorContent">
+                    </div>
+                    <form accept-charset="UTF-8" action="https://lh372.infusionsoft.com/app/form/process/82fa6a04caae7897503c680ec99556b1" class="infusion-form" id="inf_form_82fa6a04caae7897503c680ec99556b1" method="POST" name="Web Form submitted" onsubmit="var form = document.forms[0];
+                    var resolution = document.createElement('input');
+                    resolution.setAttribute('id', 'screenResolution');
+                    resolution.setAttribute('type', 'hidden');
+                    resolution.setAttribute('name', 'screenResolution');
+                    var resolutionString = screen.width + 'x' + screen.height;
+                    resolution.setAttribute('value', resolutionString);
+                    form.appendChild(resolution);
+                    var pluginString = '';
+                    if (window.ActiveXObject) {
+                    var activeXNames = {'AcroPDF.PDF':'Adobe Reader',
+                        'ShockwaveFlash.ShockwaveFlash':'Flash',
+                        'QuickTime.QuickTime':'Quick Time',
+                        'SWCtl':'Shockwave',
+                        'WMPLayer.OCX':'Windows Media Player',
+                        'AgControl.AgControl':'Silverlight'};
+                    var plugin = null;
+                    for (var activeKey in activeXNames) {
+                        try {
+                            plugin = null;
+                            plugin = new ActiveXObject(activeKey);
+                        } catch (e) {
+                            // do nothing, the plugin is not installed
+                        }
+                        pluginString += activeXNames[activeKey] + ',';
+                    }
+                    var realPlayerNames = ['rmockx.RealPlayer G2 Control',
+                        'rmocx.RealPlayer G2 Control.1',
+                        'RealPlayer.RealPlayer(tm) ActiveX Control (32-bit)',
+                        'RealVideo.RealVideo(tm) ActiveX Control (32-bit)',
+                        'RealPlayer'];
+                    for (var index = 0; index &lt; realPlayerNames.length; index++) {
+                        try {
+                            plugin = new ActiveXObject(realPlayerNames[index]);
+                        } catch (e) {
+                            continue;
+                        }
+                        if (plugin) {
+                            break;
+                        }
+                    }
+                    if (plugin) {
+                        pluginString += 'RealPlayer,';
+                    }
+                    } else {
+                    for (var i = 0; i &lt; navigator.plugins.length; i++) {
+                        pluginString += navigator.plugins[i].name + ',';
+                    }
+                    }
+                    pluginString = pluginString.substring(0, pluginString.lastIndexOf(','));
+                    var plugins = document.createElement('input');
+                    plugins.setAttribute('id', 'pluginList');
+                    plugins.setAttribute('type', 'hidden');
+                    plugins.setAttribute('name', 'pluginList');
+                    plugins.setAttribute('value', pluginString);
+                    form.appendChild(plugins);
+                    var java = navigator.javaEnabled();
+                    var javaEnabled = document.createElement('input');
+                    javaEnabled.setAttribute('id', 'javaEnabled');
+                    javaEnabled.setAttribute('type', 'hidden');
+                    javaEnabled.setAttribute('name', 'javaEnabled');
+                    javaEnabled.setAttribute('value', java);
+                    form.appendChild(javaEnabled);">
+
+
+
+                    <input name="inf_form_xid" type="hidden" value="82fa6a04caae7897503c680ec99556b1" />
+                    <input name="inf_form_name" type="hidden" value="Web Form submitted" />
+                    <input name="infusionsoft_version" type="hidden" value="1.70.0.75009" />
+
+                        <!-- <input class="infusion-field-input input-submit-phone" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Nhập số điện thoại của bạn tại đây" type="text" /> -->
+                    <div class="form-submit-phone">
+                        <input class="infusion-field-input input-submit-phone" id="inf_field_Phone1" name="inf_field_Phone1" placeholder="Nhập số điện thoại của bạn tại đây" type="text" />
+                        <div class="infusion-submit" style="text-align:center;">
+                            <button id="submit-phone" class="btn-submit-phone" type="submit" value="Gửi ngay">NHẬN CODE LIỀN TAY</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+         <!--ĐO MẮT -->
+        <div id="do-mat" class="do-mat target">
+            <div class="container title-do-mat">
+                <div class="row">
+                    <p class="title">
+                        ĐO MẮT THEO TIÊU CHUẨN QUỐC TẾ TẠI MẮT VIỆT!
+                    </p>
+                    <img src="images/line-sec2.png" class="line-sec2">
+                    <div class="description">
+                        Mắt Việt sở hữu quy trình đo khúc xạ và Sight Lab tiên tiến theo Công nghệ Châu Âu - Đây chính là 
+                        bước quan trọng để bạn có một cặp kính đơn tròng tốt nhất cho chính mình với công nghệ đo chuẩn xác nhất hiện nay!
+                    </div>
+                </div>
+
+                <!-- pc -->
+                <div class="row hidden-xs">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                <div class="btn-xemthem btn-xt1" data-toggle="modal" data-target="#modal-1">
+                                    Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat"  >
+                                        <img src="images/do-mat-1.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Quy trình đo mắt 12 bước theo tiêu chuẩn quốc tế
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                <div class="btn-xemthem btn-xt2"  data-toggle="modal" data-target="#modal-2">
+                                    Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat">
+                                        <img src="images/do-mat-2.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Đội ngũ kỹ thuật viên khúc xạ chuyên nghiệp 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                <div class="btn-xemthem btn-xt3" data-toggle="modal" data-target="#modal-3">
+                                        Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat">
+                                        <img src="images/do-mat-3.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t1">
+                                            Cung cấp nhiều giải pháp tiên tiến nhất về thị lực từ nhà sản xuất tròng kính số 1 Thế giới - Essilor
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                <div class="btn-xemthem btn-xt4" data-toggle="modal" data-target="#modal-4">
+                                        Xem thêm
+                                </div>
+                                <div class="item">    
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-4.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t1">
+                                            Phân phối các thương hiệu mắt kính thời trang chính hãng cao cấp– Chính sách bảo hành uy tín
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                    <div class="btn-xemthem btn-xt5" data-toggle="modal" data-target="#modal-5">
+                                            Xem thêm
+                                        </div>
+                                <div class="item">
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-5.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Sở hữu gần 30 cửa hàng uy tín trên toàn quốc
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 item-grid">
+                                    <div class="btn-xemthem btn-xt6" data-toggle="modal" data-target="#modal-6">
+                                            Xem thêm
+                                        </div>
+                                <div class="item">
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-6.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Trang thiết bị đo mắt hiện đại hàng đầu từ Châu Âu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 item-big-right item-grid">
+                        <div class="btn-xemthem btn-xt7" data-toggle="modal" data-target="#modal-7">
+                                Xem thêm
+                        </div>
+                        <div class="item-right">
+                            <div class="item-do-mat">
+                                <img src="images/do-mat-right.png" class="img-do-mat-right">
+                            </div>
+                            <div class="text-content-right">
+                                    Đặc biệt, Mắt Việt tự hào sở hữu hệ thống Essilor Sight Lab tiên tiến bậc nhất từ nhà sản xuất kính số 1 thế giới - Essilor. 
+                                    <br>
+                                    <br>
+                                    Kết quả đo khám mắt của bạn sẽ tuyệt đối chính xác với các giải pháp phù hợp nhất dựa trên những thông số về thị lực của riêng bạn
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile -->
+                <div class="row hidden-lg hidden-md hidden-sm">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5" data-toggle="modal" data-target="#modal-1">
+                                <div class="btn-xemthem btn-xt1" >
+                                    Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat"  >
+                                        <img src="images/do-mat-1.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Quy trình đo mắt 12 bước theo tiêu chuẩn quốc tế
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5" data-toggle="modal" data-target="#modal-2">
+                                <div class="btn-xemthem btn-xt2"  >
+                                    Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat">
+                                        <img src="images/do-mat-2.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Đội ngũ kỹ thuật viên khúc xạ chuyên nghiệp 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5" data-toggle="modal" data-target="#modal-3">
+                                <div class="btn-xemthem btn-xt3" >
+                                        Xem thêm
+                                </div>
+                                <div class="item">
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-3.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t1">
+                                            Cung cấp nhiều giải pháp tiên tiến nhất về thị lực từ nhà sản xuất tròng kính số 1 Thế giới - Essilor
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5 " data-toggle="modal" data-target="#modal-4">
+                                    <div class="btn-xemthem btn-xt4" >
+                                            Xem thêm
+                                    </div>
+                                <div class="item">    
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-4.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t1">
+                                            Phân phối các thương hiệu mắt kính thời trang chính hãng cao cấp– Chính sách bảo hành uy tín
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5" data-toggle="modal" data-target="#modal-5">
+                                    <div class="btn-xemthem btn-xt5" >
+                                            Xem thêm
+                                        </div>
+                                <div class="item">
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-5.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Sở hữu gần 30 cửa hàng uy tín trên toàn quốc
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 padding-5" data-toggle="modal" data-target="#modal-6">
+                                    <div class="btn-xemthem btn-xt6" >
+                                            Xem thêm
+                                        </div>
+                                <div class="item">
+                                    <div class="item-do-mat" >
+                                        <img src="images/do-mat-6.png" class="img-do-mat">
+                                    </div>
+                                    <div class="text-content t2">
+                                            Trang thiết bị đo mắt hiện đại hàng đầu từ Châu Âu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 item-big-right" data-toggle="modal" data-target="#modal-7">
+                        <div class="btn-xemthem btn-xt7" >
+                                Xem thêm
+                        </div>
+                        <div class="item-right">
+                            <div class="item-do-mat">
+                                <img src="images/do-mat-right.png" class="img-do-mat-right">
+                            </div>
+                            <div class="text-content-right">
+                                    Đặc biệt, Mắt Việt tự hào sở hữu hệ thống Essilor Sight Lab tiên tiến bậc nhất từ nhà sản xuất kính số 1 thế giới - Essilor. 
+                                    <br>
+                                    <br>
+                                    Kết quả đo khám mắt của bạn sẽ tuyệt đối chính xác với các giải pháp phù hợp nhất dựa trên những thông số về thị lực của riêng bạn
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="btn-cua-hang">
+                        <a href="https://matviet.vn/cua-hang/">
+                            <p class="btn-step2">Tìm cửa hàng Mắt Việt gần bạn
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid">
+            <div class="row">
+                <div class="footer" id="footer">
+                    <div class="container">
+                        <div class="row">
+    
+                            <div class="col-md-3 col-sm-6 col-xs-12 col-ft">
+                                <div class="title-ft">
+                                    TIN TỨC
+                                </div>
+                                <a href="https://matviet.vn/tieu-chuan-do-mat-tai-mat-viet/">
+                                    <p>Tiêu chuẩn đo khám mắt </p>
+                                </a>
+        
+                                <a href="https://matviet.vn/crizal/">
+                                    <p>Tìm hiểu về tròng kính </p>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-ft">
+                                <div class="title-ft">
+                                    THÔNG TIN LIÊN HỆ
+                                </div>
+                                <p>Điện thoại: 1900 6081 </p>
+                                <p>Email: info@matkinh.com.vn </p>
+                                <p>Thời gian làm việc: Tất cả các ngày trong tuần <br>
+                                    trên toàn hệ thống của hàng Mắt Việt. <br>
+                                    ( chi tiết thời gian mở của của các cửa hàng:
+                                    <a target="_blank" href="https://www.facebook.com/pg/Matviet.vn/about/">
+                                        tại đây</a>)
+                                </p>
+                            </div>
+        
+                            <div class="col-md-4 col-sm-9 col-xs-12 col-ft">
+                                <div class="title-ft">
+                                    GIỚI THIỆU MẮT VIỆT
+                                </div>
+                                <!-- <p>Với hệ thống hơn 30 cửa hàng uy tín, Mắt Việt đã và đang không ngừng phát
+                                    triển, mở rộng từ Nam chí Bắc tại chuỗi các trung tâm thương mại lớn và sầm uất
+                                    nhất Việt Nam: Aeon Mall, Vincom, Landmark, SC Vivo, Crescent Mall, Lotte …
+                                </p>
+                                <p>* Mắt Việt tự hào là địa chỉ bán lẻ chuyên nghiệp hàng đầu tại thị trường Việt Nam,
+                                    chuyên cung cấp mắt kính chính hãng của các tập đoàn lớn nhất thế giới.
+                                </p>
+                                <p>* Mắt Việt là đại lý phân phối các loại tròng kính chất lượng cao của
+                                    Tập đoàn Essilor Pháp cùng các thương hiệu thời trang cao cấp: Bolon,
+                                    Reebok, Jeep, Converse, HangTen, Revlon, Bonia, Valentino Rudy, Guy Laroche,
+                                    Sting, Invu, Molsion, Ancci, Flyer, Giorgio Ferri…
+                                </p> -->
+                                <p>
+                                    Với hệ thống hơn 35 cửa hàng uy tín, Mắt Việt tự hào là Chuỗi bán lẻ mắt kính chính hãng lớn nhất Việt Nam, chuyên cung cấp mắt kính chính hãng của tập đoàn Essilor Pháp cùng các thương hiệu thời trang cao cấp: Bolon, Reebok, Jeep, Converse, HangTen, Revlon, Bonia, Valentino Rudy, Guy Laroche, Sting, Invu, Molsion, Ancci, Flyer, Giorgio Ferri…
+                                </p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Modal video-->
+    <!-- video hạn chế chói -->
+    <div id="Modal1" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            HẠN CHẾ CHÓI
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/8Z4YqtthfQs" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video hạn chế bám bụi -->
+    <div id="Modal2" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            HẠN CHẾ BÁM BỤI
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/mEg2GdWm49I" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- video HẠN CHẾ BÁM NƯỚC -->
+        <div id="Modal3" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            HẠN CHẾ BÁM NƯỚC
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/93cA9UJW0O8" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- video HAN CHẾ TRẦY XƯỚC -->
+        <div id="Modal4" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            HAN CHẾ TRẦY XƯỚC
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/yEuZM8JDp6U" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- video BÁM VÂN TAY -->
+        <div id="Modal5" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            HẠN CHẾ BÁM VÂN TAY
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/3YO7y3WMuR4" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- video NGĂN CHẶN TIA UV -->
+        <div id="Modal6" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            NGĂN CHẶN TIA UV
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/3zA9AgNOZLc" frameborder="0" 
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                                <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video NGĂN CHẶN ÁNH SÁNG XANH CÓ HẠI -->
+    <div id="Modal7" class="modal modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="title">
+                            NGĂN CHẶN ÁNH SÁNG XANH CÓ HẠI
+                        </p>
+                        <p class="content">
+                            <iframe class="iframe-popup" src="https://www.youtube.com/embed/4lmeo_Av_1A" frameborder="0"
+                                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </p>
+                        <div class="row">
+                            <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modalSuccess" role="dialog" data-backdrop="static">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="close-modals"><i class="fas fa-times-circle"></i></div>
+                <div class="modal-body">
+                    <img src="images/png-valider.png" class="img-responsive">
+                    <p>
+                        Chúc mừng bạn đã đăng ký thành công!<br>
+                        Mắt Việt sẽ gửi mã khuyến mãi về số điện thoại của bạn!<br>
+                        Trân trọng cám ơn!
+                    </p>
+                    <div class="hidden" id="countdown">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal đo mắt -->
+    <div class="modal" id="modal-1" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Quy trình đo mắt 12 bước theo tiêu chuẩn quốc tế</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-2" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Đội ngũ kỹ thuật viên khúc xạ chuyên nghiệp </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-3" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Cung cấp nhiều giải pháp tiên tiến nhất về thị lực từ nhà sản xuất tròng kính số 1 Thế giới - Essilor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-4" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Phân phối các thương hiệu mắt kính thời trang chính hãng cao cấp– Chính sách bảo hành uy tín</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-5" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;"> Sở hữu gần 30 cửa hàng uy tín trên toàn quốc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-6" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Trang thiết bị đo mắt hiện đại hàng đầu từ Châu Âu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-7" role="dialog" >
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <div class="modal-body">
+                    <p style="font-size: 18px;">Đặc biệt, Mắt Việt tự hào sở hữu hệ thống Essilor Sight Lab tiên tiến bậc nhất từ nhà sản xuất kính số 1 thế giới - Essilor. 
+                        Kết quả đo khám mắt của bạn sẽ tuyệt đối chính xác với các giải pháp phù hợp nhất dựa trên những thông số về thị lực của riêng bạn
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Common JS -->
+    <script src="js/common.js"></script>
+    <script src="fancybox/dist/jquery.fancybox.min.js"></script>
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- animate -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 2,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            grabCursor: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+
+        var swiper1 = new Swiper('.lydo_slide', {
+        loop:true,
+        autoplay:true,
+        slidesPerView: 3,
+        // spaceBetween: 10,
+        navigation: {
+            nextEl: '.lydo_next',
+            prevEl: '.lydo_prev',
+        },
+        breakpoints: {
+            640: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            },
+        }
+        });
+
+        var swiper2 = new Swiper('.intro_slide', {
+        loop:true,
+        autoplay:true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        // spaceBetween: 10,
+        navigation: {
+            nextEl: '.intro_next',
+            prevEl: '.intro_prev',
+        },
+        breakpoints: {
+            640: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            centeredSlides: true,
+            },
+        }
+        });
+
+
+
+        $("#owl-1").owlCarousel({
+            nav : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            touchDrag: true,
+            mouseDrag: false,
+            items : 1,
+            loop:true,
+            dots: false,
+            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        });
+
+        $("#owl-2").owlCarousel({
+            nav : true, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            touchDrag: true,
+            mouseDrag: false,
+            items : 1,
+            loop:true,
+            dots: false,
+            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        });
+
+        $("#owl-3").owlCarousel({
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            touchDrag: true,
+            mouseDrag: false,
+            items : 1,
+            loop:true,
+            dots: false,
+            // autoplay:true,
+            // autoplayTimeout:3000,
+            // autoplayHoverPause:true,
+            nav : true, // Show next and prev buttons
+            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        });
+
+
+    </script>
+    <script>
+        $(document).ready(function(ev){
+            $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+            $('#custom_carousel .controls li.active').removeClass('active');
+            $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+            })
+        });
+    
+    </script>
+    <script>
+        window.addEventListener("message", receiveMessage, false);
+        function receiveMessage(event)
+        {
+          if(event.data == "submit_success"){
+              //code in here
+            $('#modalSuccess').modal('show'); 
+          }
+        }
+
+        
+    </script>
+
+    <script type="text/javascript">
+        
+        function popModal() {
+            $('#modalSuccess').modal('show');
+        }
+
+        var seconds = 4;
+        function countdown() {
+            seconds = seconds - 1;
+            if (seconds < 0) {
+                // Chnage your redirection link here
+                window.location = "https://matviet.vn/cua-hang/";
+            } else {
+                // Update remaining seconds
+                document.getElementById("countdown").innerHTML = seconds;
+                // Count down using javascript
+                window.setTimeout("countdown()", 1000);
+            }
+        }
+        
+
+        var hash = window.location.hash;
+        if (hash.substring(1) == 'uudai') {
+            popModal();
+            // Run countdown function
+            countdown();
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:image" property="og:image" content="http://tamsoattieuhoa.hoanmysaigon.com/images/thumb_zalo.png" />
+
+    <title>Bệnh viện Hoàn Mỹ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
+    <link href="css/spacings.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
+        <!-- jQuery Version 1.11.1 -->
+        <script src="js/jquery.js"></script>
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Common JS -->
+        <script src="js/common.js?v=200"></script>
+        <script src="js/select2.min.js"></script>
+        <!-- Swiper JS -->
+    <!-- <link href="" rel="icon"> -->
+    
+    <script type="text/javascript">
+    	function writeCookie(name,value,days){var date,expires;if(days){date=new Date();date.setTime(date.getTime()+(days*24*60*60*1000));expires="; expires="+date.toGMTString()}else{expires=""}document.cookie=name+"="+value+expires+"; path=/"}function readCookie(name){var i,c,ca,nameEQ=name+"=";ca=document.cookie.split(';');for(i=0;i<ca.length;i++){c=ca[i];while(c.charAt(0)==' '){c=c.substring(1,c.length)}if(c.indexOf(nameEQ)==0){return c.substring(nameEQ.length,c.length)}}return''}
+    	
+    	function getParameterByName(name) {
+    	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    	        results = regex.exec(location.search);
+    	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    	}
+    	
+    	var utm_source = getParameterByName('utm_source');
+    	var utm_medium = getParameterByName('utm_medium');
+    	var utm_campaign = getParameterByName('utm_campaign');
+      var utm_term = getParameterByName('utm_term');
+      var utm_content = getParameterByName('utm_content');
+    	
+    	if(utm_source!=""){ 
+    		writeCookie('utm_source',utm_source,30);
+    		writeCookie('utm_medium',utm_medium,30);
+    		writeCookie('utm_campaign',utm_campaign,30);
+        writeCookie('utm_term',utm_term,30);
+        writeCookie('utm_content',utm_content,30);
+    	}
+    </script>
+    <!-- CandyPixel V2.2.0 -->
+    <script>
+        $ = jQuery.noConflict();
+        var bLock = false;
+        var dLast = 0;
+        var cp_script = new Array();
+        
+        var cp_token = "DyoBc34n0gA5eDxI_Fk5XJgruUXXtARsZRC3XvTifU0=";
+        var cp_pid = 100387;
+        var cp_psid = 1618;
+        var cp_peid = "";
+        var cp_tracking="";
+        
+        // Uncomment this if you want to set your own pattern to suit your form
+        // contact support if you need assistance.
+        // var cpCustomFormPattern = '(example) form#myForm input[name="submit"]';
+        
+        function cp_loaddscript(array, callback) {
+            var loader = function (src, handler) {
+                var script = document.createElement("script");
+                script.src = src;
+                script.onload = script.onreadystatechange = function () {
+                    script.onreadystatechange = script.onload = null;
+                    handler();
+                }
+                var head = document.getElementsByTagName("head")[0];
+                (head || document.body).appendChild(script);
+            };
+            (function run() {
+             if (array.length != 0) {
+             loader(array.shift(), run);
+             } else {
+             callback && callback();
+             }
+             })();
+        }
+    
+    if (null==window.jQuery||null==$||$.fn.jquery.replace(/\.(\d)/g,".0$1").replace(/\.0(\d{2})/g,".$1") < "1.07.00"){
+        cp_script.push('https://cdn.salesdy.com/js/jquery.1.12.4.min.js');
+    }
+    cp_script.push('https://cdn.salesdy.com/js/js.cookie.js');
+    cp_script.push('https://cdn.salesdy.com/js/bluebird.js');
+    cp_script.push('https://cdn.salesdy.com/js/V1.0/api.js');
+    
+    cp_loaddscript(cp_script, function () {
+                   //call back function after script loaded
+                   setTimeout(function(){ // IE
+                              initCP();
+                              }, 3000)
+                   });
+        </script>
+</head>
+<body data-spy="scroll" data-target="#active_list" data-offset="50" id="active_list">
+
+  <nav class="navbar navbar-default navbar-fixed-top center" id="active_list">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo">
+          <img src="images/logo.png" class="img-responsive" />
+        </div>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="page-scroll">
+            <a href="#header">TRANG CHỦ</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#dauhieu">DẤU HIỆU</a>
+          </li>
+          <li class="page-scroll">
+              <a href="#chandoan">CHẨN ĐOÁN</a>
+          </li>
+          <li class="page-scroll">
+              <a href="#uudiem">ƯU ĐIỂM</a>
+          </li>
+          <li class="page-scroll">
+              <a href="#footer">ĐĂNG KÝ</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="container-fluid">
+      <div class="row hidden-lg hidden-md hidden-sm">
+        <div class="col-xs-12 discount">
+            <img src="images/header_mb.jpg" alt="" class="img-responsive center-block">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 form_left">
+          <div class="form_header">
+            <div class="title">
+              Đăng ký nhận <br>
+              tư vấn miễn phí
+            </div>
+            <hr>
+            <form>
+              <input type="text" name="fullname" id="fullname" class="field-input" placeholder="Họ và Tên">
+              <input type="text" name="phone" id="phone" class="field-input" placeholder="Số điện thoại">
+              <input type="text" name="email" id="email" class="field-input" placeholder="Email">
+              <button type="button" class="field-input-register" onclick="kiemtra()">ĐĂNG KÝ NGAY</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4 discount">
+          <figure>
+            <img src="images/discount.png" alt="" class="img-responsive center-block hidden-xs">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Dấu hiệu -->
+  <section id="dauhieu">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 no-padding-left no-padding-right">
+            <img src="images/dauhieu_hinh_mb.jpg" alt="" class="img-responsive center-block hidden-lg hidden-md hidden-sm">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 no-padding-left no-padding-right">
+          <figure>
+            <img src="images/dauhieu_img.png" alt="" class="img-responsive center-block dauhieu_img hidden-xs">
+            
+          </figure>
+        </div>
+        <div class="col-md-3 no-padding-left no-padding-right">
+          <div class="bg_xam">
+            <div class="dauhieu_text">
+              <div class="title">
+                  Dấu hiệu
+              </div>
+              <p>
+                  (*) Chảy máu khi đi tiêu là dấu hiệu thường gặp nhất của bệnh trĩ, nhưng cũng có thể xảy ra với các bệnh khác bao gồm cả ung thư hậu môn - trực tràng - dạ dày. Đừng cho rằng chảy máu đó đến từ trĩ mà không tham khảo ý kiến của bác sĩ.
+              </p>
+              <div class="btn_dk">
+                  đăng ký nhận tư vấn miễn phí
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Chẩn đoán -->
+  <section id="chandoan">
+    <div class="container-fluid">
+      <div class="hidden-lg hidden-md hidden-sm">
+        <div class="row ">
+          <div class="col-xs-12">
+            <figure>
+              <img src="images/chandoan_hinh_mb.png" alt="" class="img-responsive center-block">
+            </figure>
+          </div>
+        </div>
+        <div class="row chandoan1">
+          <div class="col-xs-3">
+            <figure>
+              <img src="images/so1.png" alt="" class="img-responsive center-block">
+            </figure>
+          </div>
+          <div class="col-xs-9">
+              <p>Nội soi dạ dày, đại tràng với ánh sáng giải tần hẹp giúp tìm ra ung thư sớm Nếu có bất kỳ dấu hiệu nghi ngờ nào, bác sỹ sẽ lấy một phần mô tại vị trí đó để xét nghiệm tìm tế bào ung thư.</p>
+          </div>
+        </div>
+        <div class="row chandoan2">
+          <div class="col-xs-3">
+            <figure>
+              <img src="images/so2.png" alt="" class="img-responsive center-block">
+            </figure>
+          </div>
+          <div class="col-xs-9">
+              <p>Chẩn đoán hình ảnh: chụp cắt lớp điện toán (MSCT), hoặc chụp X-quang dạ dày, đại tràng cản quang.</p>
+          </div>
+        </div>
+        <div class="row chandoan3">
+          <div class="col-xs-3">
+            <figure>
+              <img src="images/so3.png" alt="" class="img-responsive center-block">
+            </figure>
+          </div>
+          <div class="col-xs-9">
+              <p>Xác định và lên phác đồ điều trị các giai đoạn của ung thư dạ dày, đại tràng.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 col-md-offset-1 hidden-xs">
+          <figure class="uudiem_btn" style="cursor:pointer;">
+            <img src="images/chandoan_img.png" alt="" class="img-responsive center-block">
+          </figure>
+        </div>
+        <div class="col-md-4 chandoan_right">
+          <div class="bg_xanh">
+            
+          </div>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <!-- <img src="images/thumb.png" data-video="https://www.youtube.com/embed/WoB6schTVxw?autoplay=1&enablejsapi=1" alt="" class="img-responsive center-block"> -->
+                <video class="video" controls poster="images/thumb.jpg">
+                  <source src="video/video1.mp4" type="video/mp4">                  
+                </video>
+                <!-- <img src="images/btnplay.png" alt="" class="img-responsive btnplay"> -->
+                <!-- <iframe src="https://www.youtube.com/embed/WoB6schTVxw?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe> -->
+              </div>
+          
+              <!-- <div class="item">
+                  <video class="video" controls poster="images/thumb.jpg">
+                    <source src="video/video1.mp4" type="video/mp4">                  
+                  </video>
+              </div>
+          
+              <div class="item">
+                  <video class="video" controls poster="images/thumb.jpg">
+                    <source src="video/video1.mp4" type="video/mp4">                  
+                  </video>
+              </div> -->
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Ưu điểm -->
+  <section id="uudiem">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <figure class="hidden-xs">
+            <img src="images/title1.png" alt="" class="img-responsive center-block">
+          </figure>
+          <div class="title hidden-lg hidden-md hidden-sm">
+              Ưu điểm
+              <img src="images/line_title.png" alt="" class="img-responsive center-block">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="green-border">
+                <img src="images/img1.png" alt="" class="img-responsive center-block">
+                <div class="uudiem_text">
+                  <div class="row">
+                    <div class="col-md-3 col-md-offset-0 col-xs-4 col-xs-offset-4">
+                      <figure>
+                        <img src="images/icon1.png" alt="" class="img-responsive center-block">
+                      </figure>
+                    </div>
+                    <div class="col-md-9 col-xs-12">
+                      Máy móc, công nghệ vượt trội chẩn đoán bệnh nhanh, chính xác. Cơ sở vật chất hiện đại, tiện nghi. Đặt lịch hẹn nhanh chóng, tiết kiệm thời gian.
+                    </div>
+                  </div>
+                </div>  
+                <div class="uudiem_btn">
+                  đăng ký nhận tư vấn miễn phí
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="green-border">
+                <img src="images/img2.png" alt="" class="img-responsive center-block">
+                <div class="uudiem_text">
+                  <div class="row">
+                    <div class="col-md-3 col-md-offset-0 col-xs-4 col-xs-offset-4">
+                      <figure>
+                        <img src="images/icon2.png" alt="" class="img-responsive center-block">
+                      </figure>
+                    </div>
+                    <div class="col-md-9 col-xs-12">
+                      Đội ngũ Giáo sư, Tiến sĩ, Bác sĩ có kinh nghiệm, đầu ngành chuyên về bệnh tiêu hóa. Bác sĩ chuyên khoa trực tiếp khám và tư vấn.
+                    </div>
+                  </div>
+                </div>  
+                <div class="uudiem_btn">
+                  đăng ký nhận tư vấn miễn phí
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="green-border">
+                <img src="images/img3.png" alt="" class="img-responsive center-block">
+                <div class="uudiem_text">
+                  <div class="row">
+                    <div class="col-md-3 col-md-offset-0 col-xs-4 col-xs-offset-4">
+                      <figure>
+                        <img src="images/icon3.png" alt="" class="img-responsive center-block">
+                      </figure>
+                    </div>
+                    <div class="col-md-9 col-xs-12 uudiem_text3">
+                      Nội soi đường tiêu hóa không đau
+                    </div>
+                  </div>
+                </div>  
+                <div class="uudiem_btn">
+                  đăng ký nhận tư vấn miễn phí
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Thông tin bác sĩ -->
+  <section id="bacsi">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <figure class="hidden-xs">
+            <img src="images/title2.png" alt="" class="img-responsive center-block">
+          </figure>
+          <div class="title hidden-lg hidden-md hidden-sm">
+              Thông tin bác sĩ
+              <img src="images/line_title.png" alt="" class="img-responsive center-block">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 bs">
+          <img src="images/bs1.png" alt="" class="img-responsive center-block">
+          <p>
+              <span class="certi">ThS. Bs.</span> NGUYỄN NGỌC THAO <br>
+              <span class="chuc_danh">Trưởng khoa ngoại tiêu hóa</span>
+          </p>
+        </div>
+        <div class="col-md-2 bs">
+          <img src="images/bs2.png" alt="" class="img-responsive center-block">
+          <p>
+              <span class="certi">Bs CKI.</span> BÙI QUANG ANH CHIÊU <br>
+              <span class="chuc_danh">Khoa ngoại tiêu hóa</span>
+          </p>
+        </div>
+        <div class="col-md-2 bs">
+          <img src="images/bs3.png" alt="" class="img-responsive center-block">
+          <p>
+              <span class="certi">ThS. Bs.</span> CAO HÙNG PHONG <br>
+              <span class="chuc_danh">Trưởng đơn vị nội soi tiêu hóa</span>
+          </p>
+        </div>
+        <div class="col-md-2 bs">
+          <img src="images/bs4.png" alt="" class="img-responsive center-block">
+          <p>
+              <span class="certi">ThS. Bs.</span> NGUYỄN QUANG LUẬT <br>
+              <span class="chuc_danh">Khoa ngoại tiêu hóa</span>
+          </p>
+        </div>
+        <div class="col-md-2 bs">
+          <img src="images/bs5.png" alt="" class="img-responsive center-block">
+          <p>
+              <span class="certi">Bs CKII.</span> NGUYỄN THANH THOẠI <br>
+              <span class="chuc_danh">Khoa ngoại tiêu hóa</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1 hidden-xs">
+          <figure>
+            <img src="images/logo_ft.png" alt="" class="img-responsive center-block">
+          </figure>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+          <div class="title">
+            Đăng ký nhận giảm 20% chi phí tầm soát ung thư
+            <hr>
+          </div>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                  <input type="text" name="fullname" id="fullname_ft" class="field-input" placeholder="Họ và Tên">
+                  <input type="text" name="phone" id="phone_ft" class="field-input" placeholder="Số điện thoại">
+              </div>
+              <div class="col-md-6">
+                <input type="text" name="email" id="email_ft" class="field-input" placeholder="Email">
+                <button type="button" class="field-input-register" onclick="kiemtra_footer()">ĐĂNG KÝ NGAY</button>
+              </div>
+            </div>
+          </form>
+          <div class="hidden-lg hidden-md hidden-sm mt-20">
+            <figure>
+              <img src="images/logo_ft.png" alt="" class="img-responsive center-block">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <script src="js/swiper.min.js"></script>
+  
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/fontawesome-all.min.js"></script>
+
+</body>
+</html>

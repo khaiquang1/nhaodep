@@ -1,0 +1,50 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'leads' => 'Oportunitati', 
+'leadsbackup' => 'Își îndreaptă importul', 
+'newupload' => 'Oportunități de încărcare', 
+'new' => 'Creați plumb', 
+'edit' => 'Editați plumbul', 
+'show' => 'Afișați plumbul', 
+'delete' => 'Ștergeți plumbul', 
+'details' => 'Detaliile echipei', 
+'creation_date' => 'Data crearii', 
+'opportunity' => 'Oportunitate', 
+'contact_name' => 'nume de contact', 
+'country' => 'Țară', 
+'email' => 'E-mail', 
+'phone' => 'Telefon', 
+'sales_team' => 'Echipa de vânzări', 
+'company_name' => 'Numele Companiei', 
+'customer' => 'Client', 
+'address' => 'Adresa', 
+'state' => 'Stat', 
+'city' => 'Oraș', 
+'select_country' => 'Selecteaza tara', 
+'select_state' => 'Selectează statul', 
+'select_city' => 'Selectați orașul', 
+'salesperson' => 'Persoană de vânzare', 
+'title' => 'Titlu', 
+'function' => 'Tipul funcției', 
+'mobile' => 'Mobil', 
+'fax' => 'Fax', 
+'tags' => 'Etichete', 
+'priority' => 'Prioritate', 
+'internal_notes' => 'Note interne', 
+'calls' => 'apeluri', 
+'select_priority' => 'Selectați prioritate', 
+'product_name' => 'numele produsului', 
+'additionl_info' => 'Informații suplimentare', 
+'client_name' => 'numele clientului', 
+'agent_name' => 'Numele agentului', 
+'select_title' => 'Selectați Titlu', 
+'select_function' => 'selectați tipul de funcție', 
+'company_site' => 'Site-ul companiei', 
+'call' => 'Creați apel', 
+
+ 
+];

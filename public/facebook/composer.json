@@ -1,0 +1,8 @@
+{
+    "require": {
+        "facebook/php-business-sdk": "4.0.*",
+        "facebook/php-ads-sdk": "4.0.*"
+    }
+}
+
+

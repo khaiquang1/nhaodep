@@ -1,0 +1,88 @@
+
+<script language="javascript">
+$ = jQuery.noConflict();
+if (typeof bLock === 'undefined') {
+    var bLock = false;
+}
+if (typeof dLast === 'undefined') {
+    var dLast = 0;
+}
+if (typeof cp_script === 'undefined') {
+var cp_script = new Array();
+}
+if (typeof cp_token === 'undefined') {
+var cp_token = "Cwn1IegnP2yGH52mlILQeQVI8TIeg-O6QTveKVFAD38=";
+}
+if (typeof cp_pid === 'undefined') {
+var cp_pid = 100176;
+}
+if (typeof cp_psid === 'undefined') {
+var cp_psid = 726;
+}
+if (typeof cp_peid === 'undefined') {
+var cp_peid = "";
+}
+if (typeof blackListForm === 'undefined') {
+var blackListForm = []; 
+}
+if (typeof blackListField === 'undefined') {
+var blackListField = []; 
+}
+if (typeof cp_tracking === 'undefined') {
+var cp_tracking = true; 
+}
+if (typeof sd_product_id === 'undefined') {
+var sd_product_id = 1; 
+}
+function cp_loaddscript(array, callback) {
+var loader = function (src, handler) {
+var script = document.createElement("script");
+script.src = src;
+script.onload = script.onreadystatechange = function () {
+script.onreadystatechange = script.onload = null;
+handler();
+}
+var head = document.getElementsByTagName("head")[0];
+(head || document.body).appendChild(script);
+};
+(function run() {
+if (array.length != 0) {
+loader(array.shift(), run);
+} else {
+callback && callback();
+}
+})();
+}
+
+if (null==window.jQuery||null==$||$.fn.jquery.replace(/\.(\d)/g,".0$1").replace(/\.0(\d{2})/g,".$1") < "1.07.00"){
+cp_script.push('https://cdn2.salesdy.com/js/jquery.1.12.4.min.js');
+}
+cp_script.push('https://cdn2.salesdy.com/js/js.cookie.min.js');
+cp_script.push('https://cdn2.salesdy.com/js/bluebird.js');
+cp_script.push('https://cdn2.salesdy.com/js/V1.1/libs.min.js?v2222');
+
+function specialHandle() {
+// Add any custom JS here.
+}
+// Before submit checking. Please change to false if using manual trigger.
+function cpBeforeSubmit() {
+
+return true;
+}
+
+function cpAfterSubmit(_response) {
+return true;
+}
+cp_loaddscript(cp_script, function () {
+//call back function after script loaded
+setTimeout(function(){ // IE
+initCP();
+}, 6000)
+});
+var phone_f="0933040828"; //Số hotline
+var page_f="https://www.facebook.com/newtechshop.com.vn/inbox/"; //LInk page
+var addrress_f="https://g.page/newtechshop?share"; //Link địa chỉ google
+var page_id_f="112905952502420";
+var ga_f="UA-109932770-1";
+</script>
+<script language="javascript" src="//api2.fastercrm.com/js/code.js?v=37"></script>

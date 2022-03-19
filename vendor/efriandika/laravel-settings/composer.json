@@ -1,0 +1,39 @@
+{
+    "name": "efriandika/laravel-settings",
+    "description": "Laravel 5 Persistent Settings",
+    "homepage": "https://github.com/efriandika/laravel-settings",
+    "version": "1.2.5",
+    "keywords": [
+        "laravel",
+        "settings",
+        "persistent"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Efriandika Pratama",
+            "email": "efriandika@gmail.com"
+        }
+    ],
+    "support": {
+    "source": "https://github.com/efriandika/laravel-settings/",
+    "issues": "https://github.com/efriandika/laravel-settings/issues"
+  },
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.6.*",
+        "illuminate/database": ">=5.1 <6.0",
+        "illuminate/events": ">=4.1 <6.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Efriandika\\LaravelSettings\\": "src/"
+        }
+    }
+}

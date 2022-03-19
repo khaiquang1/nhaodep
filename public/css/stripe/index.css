@@ -1,0 +1,147 @@
+/*payWithCardModal*/
+.payWithCardModal{
+    display: none;
+}
+.payWithCardModal .overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+.overlay-Background{
+    background: rgba(0,0,0,.6);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.globalContent{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+}
+.globalContent main{
+    width: 350px;
+    margin: 50px auto;
+}
+
+.modal_close{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 17px;
+    vertical-align: middle;
+}
+
+
+
+main {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.success{
+    background-color: transparent;
+}
+main > .container-lg .example.submitted form, main > .container-lg .example.submitting form {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+main > .container-lg .example.submitted form, main > .container-lg .example.submitting form {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+
+main > .container-lg .example.submitted .success, main > .container-lg .example.submitting .success {
+    pointer-events: all;
+}
+@media (min-width: 670px){
+    main > .container-lg .example .success {
+        padding: 40px;
+    }
+    main > .container-lg .example .success {
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        pointer-events: none;
+        overflow: hidden;
+    }
+}
+main > .container-lg .example .success .icon {
+    margin: 15px 0 30px;
+    transform: translateY(70px) scale(0.75);
+}
+main > .container-lg .example.submitted .success > * {
+    opacity: 1;
+    transform: none !important;
+}
+main > .container-lg .example .success > * {
+    transition-property: opacity, transform;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    transform: translateY(50px);
+}
+main > .container-lg .example .error.visible {
+    opacity: 1;
+    transform: none;
+}
+main > .container-lg .example .error .message{
+    margin-left: 5px;
+}
+main > .container-lg .example .error {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100%;
+    margin-top: 20px;
+    left: 0;
+    padding: 0 15px;
+    font-size: 13px !important;
+    opacity: 0;
+    transform: translateY(10px);
+    transition-property: opacity, transform;
+    transition-duration: 0.35s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.globalContent .modal-header{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    background-color: #e8e9eb;
+}
+.modal_close{
+    background-color: #aaa;
+}
+.globalContent .modal-body{
+    border-top: 1px solid #fff;
+    box-shadow: 0 -1px 0 0 #d2d2d3;
+}
+.globalContent .example,.globalContent .modal-header{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}

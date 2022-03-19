@@ -1,0 +1,52 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'opportunities' => 'Oportunități', 
+'new' => 'Creați ocazia', 
+'edit' => 'Editați ocazia', 
+'show' => 'Afișați oportunitatea', 
+'delete' => 'Ștergeți oportunitatea', 
+'next_action' => 'Data următoarei acțiuni', 
+'opportunity' => 'Oportunitate', 
+'customer' => 'Client', 
+'stages' => 'etape', 
+'expected_revenue' => 'Venituri așteptate', 
+'probability' => 'Probabilitate (în%)', 
+'salesteam' => 'Echipa de vânzări', 
+'email' => 'E-mail', 
+'phone' => 'Telefon', 
+'mobile' => 'Mobil', 
+'salesperson' => 'Persoană de vânzare', 
+'next_action_title' => 'Următoarea acțiune', 
+'expected_closing' => 'Se așteaptă închiderea', 
+'priority' => 'Prioritate', 
+'tags' => 'Etichete', 
+'lost_reason' => 'Pierdut motiv', 
+'internal_notes' => 'Note interne', 
+'assigned_partner_id' => 'Partener desemnat', 
+'calls' => 'apeluri', 
+'meetings' => 'Întâlniri', 
+'convert_to_quotation' => 'Conversia la cotare', 
+'calendar' => 'Calendar', 
+'lists' => 'liste', 
+'lost' => 'Pierdut', 
+'won' => 'Castigat', 
+'product_name' => 'numele produsului', 
+'additional_info' => 'Informații suplimentare', 
+'staff' => 'Personal', 
+'team_leader' => 'Conducator de echipa', 
+'create' => 'Creați ocazia', 
+'team_members' => 'Membrii echipei', 
+'client' => 'Agent', 
+'opportunity_name' => 'Nume de oportunitate', 
+'actions' => 'acţiuni', 
+'delete_list' => 'Ștergeți lista', 
+'archive' => 'Arhiva', 
+'converted_list' => 'Lista de conversație', 
+'converted_salesorder' => 'Cotatia nu a fost gasita / deja transformata.', 
+
+ 
+];

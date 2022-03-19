@@ -1,0 +1,52 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'opportunities' => 'Opportunités', 
+'new' => 'Créer une opportunité', 
+'edit' => 'Modifier l\'opportunité', 
+'show' => 'Afficher l\'opportunité', 
+'delete' => 'Supprimer l\'opportunité', 
+'next_action' => 'Prochaine date d\'action', 
+'opportunity' => 'Opportunité', 
+'customer' => 'Client', 
+'stages' => 'Étapes', 
+'expected_revenue' => 'Revenu prévu', 
+'probability' => 'Probabilité (en%)', 
+'salesteam' => 'Équipe de vente', 
+'email' => 'Email', 
+'phone' => 'Téléphone', 
+'mobile' => 'Mobile', 
+'salesperson' => 'Vendeur', 
+'next_action_title' => 'Prochaine action', 
+'expected_closing' => 'Clôture attendue', 
+'priority' => 'Priorité', 
+'tags' => 'Mots clés', 
+'lost_reason' => 'Raison perdue', 
+'internal_notes' => 'Notes internes', 
+'assigned_partner_id' => 'Partenaire assigné', 
+'calls' => 'Appels', 
+'meetings' => 'Réunions', 
+'convert_to_quotation' => 'Convertir en devis', 
+'calendar' => 'Calendrier', 
+'lists' => 'Listes', 
+'lost' => 'Perdu', 
+'won' => 'A gagné', 
+'product_name' => 'Nom du produit', 
+'additional_info' => 'Information additionnelle', 
+'staff' => 'Personnel', 
+'team_leader' => 'Chef d\'équipe', 
+'create' => 'Créer une opportunité', 
+'team_members' => 'Membres de l\'équipe', 
+'client' => 'Agent', 
+'opportunity_name' => 'Nom de l\'opportunité', 
+'actions' => 'actes', 
+'delete_list' => 'Supprimer la liste', 
+'archive' => 'Archiver', 
+'converted_list' => 'Liste convertie', 
+'converted_salesorder' => 'La citation n\'est pas trouvée / Déjà convertie.', 
+
+ 
+];

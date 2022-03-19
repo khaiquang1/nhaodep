@@ -1,0 +1,52 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'opportunities' => 'Fırsatlar', 
+'new' => 'Fırsat yaratın', 
+'edit' => 'Fırsatı Düzenle', 
+'show' => 'Fırsatı Göster', 
+'delete' => 'Fırsatı Sil', 
+'next_action' => 'Sonraki Eylem Tarihi', 
+'opportunity' => 'fırsat', 
+'customer' => 'Müşteri', 
+'stages' => 'Aşamaları', 
+'expected_revenue' => 'beklenen Gelir', 
+'probability' => 'Olasılık (% olarak)', 
+'salesteam' => 'Satış ekibi', 
+'email' => 'E-posta', 
+'phone' => 'Telefon', 
+'mobile' => 'seyyar', 
+'salesperson' => 'Satis elemani', 
+'next_action_title' => 'Sonraki eylem', 
+'expected_closing' => 'Beklenen Kapanış', 
+'priority' => 'öncelik', 
+'tags' => 'Etiketler', 
+'lost_reason' => 'Kayıp Sebep', 
+'internal_notes' => 'İç Notlar', 
+'assigned_partner_id' => 'Atanan Ortak', 
+'calls' => 'Aramalar', 
+'meetings' => 'Toplantılar', 
+'convert_to_quotation' => 'Teklife Dönüştür', 
+'calendar' => 'Takvim', 
+'lists' => 'Listeler', 
+'lost' => 'Kayıp', 
+'won' => 'won', 
+'product_name' => 'Ürün adı', 
+'additional_info' => 'İlave bilgi', 
+'staff' => 'Personel', 
+'team_leader' => 'Takım Lideri', 
+'create' => 'Fırsat yaratın', 
+'team_members' => 'Takım üyeleri', 
+'client' => 'ajan', 
+'opportunity_name' => 'Fırsat adı', 
+'actions' => 'Eylemler', 
+'delete_list' => 'Listeyi Sil', 
+'archive' => 'Arşiv', 
+'converted_list' => 'Dönüştürülen Liste', 
+'converted_salesorder' => 'Teklif bulunamadı / Zaten dönüştürülmüş.', 
+
+ 
+];

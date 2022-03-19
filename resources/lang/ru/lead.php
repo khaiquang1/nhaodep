@@ -1,0 +1,50 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'leads' => 'Ведет', 
+'leadsbackup' => 'Импорт свинца', 
+'newupload' => 'Ссылки на потенциальных клиентов', 
+'new' => 'Создать свинец', 
+'edit' => 'Изменить руководство', 
+'show' => 'Показать ведущих', 
+'delete' => 'Удалить руководство', 
+'details' => 'Информация о команде', 
+'creation_date' => 'Дата создания', 
+'opportunity' => 'Возможность', 
+'contact_name' => 'Контактное лицо', 
+'country' => 'Страна', 
+'email' => 'Эл. адрес', 
+'phone' => 'Телефон', 
+'sales_team' => 'Отдел продаж', 
+'company_name' => 'название компании', 
+'customer' => 'Клиент', 
+'address' => 'Адрес', 
+'state' => 'состояние', 
+'city' => 'город', 
+'select_country' => 'Выберите страну', 
+'select_state' => 'Выберите состояние', 
+'select_city' => 'Выберите город', 
+'salesperson' => 'Продавец', 
+'title' => 'заглавие', 
+'function' => 'Тип функции', 
+'mobile' => 'мобильный', 
+'fax' => 'факс', 
+'tags' => 'Теги', 
+'priority' => 'приоритет', 
+'internal_notes' => 'Внутренние заметки', 
+'calls' => 'Вызовы', 
+'select_priority' => 'Выберите приоритет', 
+'product_name' => 'наименование товара', 
+'additionl_info' => 'Дополнительная информация', 
+'client_name' => 'имя клиента', 
+'agent_name' => 'Имя агента', 
+'select_title' => 'Выберите заголовок', 
+'select_function' => 'выбрать тип функции', 
+'company_site' => 'Вебсайт компании', 
+'call' => 'Создать звонок', 
+
+ 
+];

@@ -1,0 +1,154 @@
+<?php
+     $menus = $datas->menus;
+    $menuF = $this->Menus()->getMenuWithAlias('MENU_FOOTER_01');
+    $menuFooter = $this->Menus()->getChildrens($menus, $this->Menus()->getId($menuF));
+    ?>
+<footer class="w3-padding-64" style="background-color: #262627">
+<div class="w3-container">
+<div class="w3-col l6 m6 s12 w3-padding w3-text-white">
+<div class="w3-center">
+<img class="w3-image" width="200px" src="img/logo.png" alt="Logo IP SUPPLY" />
+</div>
+<div class="w3-border-bottom" style="padding-bottom:16px;">
+IP SUPPLY is the global leader in independent, multi-vendor support and pre-owned network and data center equipment.
+</div>
+
+<div class="w3-padding-16">
+<h3 class="w3-xlarge cus-font-playfair w3-text-white" style="font-weight:700"><?= $this->translate('txt_company_name'); ?></h3>
+
+<p style="padding-top:20px; font-size:14px">
+<i class="fa fa-map-marker fa-fw w3-large w3-margin-right" style="color: #fc4c02;"></i>
+<?= $this->translate('txt_company_address'); ?>
+</p>
+<p>
+<i class="fa fa-phone fa-fw w3-large  w3-margin-right" style="color: #fc4c02;"></i>
+<span class="w3-text-white">Tel:</span> +61 2 8061 6886 - <span class="w3-text-white">Mobile:</span> 04 8881 6886
+</p>
+<p><i class="fa fa-envelope fa-fw w3-large  w3-margin-right" style="color: #fc4c02;"></i> <?= $this->translate('txt_company_email'); ?></p>
+<p>
+<i class="fa fa-clock-o fa-fw w3-large w3-margin-right" style="color: #fc4c02;"></i>
+<span class="w3-text-white">Mon- Fri:</span> 8.30 am - 5 pm  <strong>Sat, Sun: Close</strong>
+
+</p>
+</div>
+</div>
+
+<div class="w3-col l3 m6 s12" >
+
+<h3 class="w3-xlarge  w3-right-align" style="font-weight:700; color: #fc4c02";>Category</h3>
+<ul class="w3-padding-16 w3-text-white w3-right-align cus-ft-list">
+<li>
+<a href="#" title="Products">Products <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Cisco Equipment">Cisco Equipment <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Server">Server <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Ethenet">Ethenet <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Fiber">Fiber <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Racks & Cabinets">Racks & Cabinets <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Power">Power <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Packs & Bundles">Packs & Bundles <i class="fa fa-caret-left"></i></a>
+</li>
+</ul>
+
+</div>
+
+<div class="w3-col l3 m6 s12">
+<h3 class="w3-xlarge w3-right-align" style="font-weight:700; color: #fc4c02">Help & Support</h3>
+
+<ul class="w3-padding-16 w3-text-white w3-right-align cus-ft-list">
+<li>
+<a href="#" title="About IP Supply">About IP Supply <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Contact Us">Contact Us <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Request a Quote">Request a Quote <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Sell your Cisco">Sell your Cisco <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="About your order">About your order <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Racks & Cabinets">Racks & Cabinets <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Return Policies">Return Policies <i class="fa fa-caret-left"></i></a>
+</li>
+<li>
+<a href="#" title="Privacy Policies">Privacy Policies <i class="fa fa-caret-left"></i></a>
+</li>
+</ul>
+</div>
+
+</div>
+</footer>
+
+
+<!-- <a id="scroll-btn" class="scroll-btn btn-show w3-hide-small" href="#"><i class="fa fa-angle-up"></i></a> -->
+
+
+
+</body>
+
+<script>
+var navbar_id = document.getElementById("navbar");
+window.onscroll = function () { myFunction() };
+var navbar = navbar_id.offsetTop;
+
+var top_tmp = document.documentElement.scrollTop;
+function myFunction() {
+    console.log(document.documentElement.scrollTop);
+    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        console.log("1");
+        // un-comment this if you want a scroll to top button
+        // document.getElementById("scroll-btn").style.display = "block";
+        navbar_id.classList.add("sticky")
+        
+    } else {
+        // document.getElementById("scroll-btn").style.display = "none";
+        navbar_id.classList.remove("sticky");
+    }
+    
+}
+
+
+function goToServiceLink() {
+    window.location.href = "http://services.ipsupply.net"
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</html>
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IP Supply Pty Ltd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/css/w3.css" />
+<link rel="stylesheet" href="/styles/font-awesome-470/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+/* four main color */
+.color-main-blue {
+color: rgb(88, 137, 182)!important;
+}
+.color-main-bg-blue {
+    background-color: rgb(88, 137, 182)!important;
+}
+/* - */
+.color-main-orange {
+color: rgb(203, 116, 57)!important;
+}
+
+.color-main-bg-orange {
+    background-color: rgb(203, 116, 57)!important;
+}
+/* - */
+.color-main-green {
+color: rgb(110, 157, 78)!important;
+}
+
+.color-main-bg-green {
+    background-color: rgb(110, 157, 78)!important;
+}
+
+/* - */
+.color-main-yellow {
+color: rgb(220, 173, 58)!important;
+}
+
+.color-main-bg-yellow {
+    background-color: rgb(220, 173, 58)!important;
+}
+/* - */
+
+.color-main-bold-orange {
+color: #fc4c02;
+}
+
+.color-main-bg-bold-orange {
+    background-color: #fc4c02;
+}
+
+/*---- default ----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #404040;
+    line-height: 1.2;
+overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+margin: 0px;
+}
+
+
+a {
+outline: none !important;
+    text-decoration: none;
+}
+a:hover {
+color: #face77
+}
+
+p {
+margin: 0 0 10px;
+}
+.w3-container{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul,ol{
+    list-style: none;
+padding:0px;
+}
+/*---- menu -----*/
+.cus-menu{
+    padding-left:32px;
+}
+.cus-sm-img-center{
+    margin-top:-5px;
+    max-width: 180px;
+}
+/*--- slide banner ---*/
+.cus-slide-content{
+position: absolute;
+top: 30%;
+left:calc(50% - 490px);
+    text-align:right;
+}
+.cus-banner-img{
+width:100%;
+height:650px;
+    object-fit: cover;
+}
+.cus-banner-info{
+width:50%;
+}
+.cus-title-service{
+    font-size:32px;
+    font-weight:700;
+}
+.cus-font-playfair{
+    font-family: 'Playfair Display', 'serif' !important;
+}
+
+
+svg:hover {
+fill: red;
+}
+svg:hover polygon,svg:hover path {
+fill: #fc4c02;
+}
+.cus-line {
+position: relative;
+}
+.cus-line::before {
+background: #ddd none repeat scroll 0 0;
+bottom: -14px;
+content: "";
+height: 1px;
+left: 50%;
+position: absolute;
+transform: translateX(-50%);
+width: 200px;
+}
+.cus-line::after {
+background: #000 none repeat scroll 0 0;
+bottom: -15px;
+content: "";
+height: 3px;
+left: 50%;
+position: absolute;
+transform: translateX(-50%);
+width: 20px;
+}
+.cus-ft-list li{
+    padding-bottom:10px;
+    
+}
+
+.scroll-btn.btn-show{
+opacity:1;
+visibility:visible;
+    z-index:9;
+right:30px;
+}
+.scroll-btn.btn-show i{
+background:#ad7753;
+bottom:50px;
+color:#fff;
+    font-size:25px;
+height:40px;
+    line-height:37px;
+opacity:1;
+position:fixed;
+right:20px;
+    text-align:center;
+width:40px;
+    z-index:2
+}
+.scroll-btn{
+bottom:11px;
+color:#fff;
+    font-size:28px;
+left:0;
+position:relative;
+transition:all .3s ease 0s
+}
+
+
+.sticky{
+    /* background-color: rgba(22, 22, 22, 0.9); old color style */
+    background-color: #212121;
+    padding-top:0px!important;
+    padding-bottom:0px!important;
+}
+
+.cus-brands .w3-bar-item{
+    padding :8px 12px;
+}
+.cus-display-bottom{
+    background-color: #fc4c02;
+bottom:-10px;
+    border-radius: 24px;
+}
+
+.cus-line-pro::before{
+content: "\f0da";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+position: absolute;
+color:#000;
+left: 0;
+bottom:-11px;
+}
+.cus-line-pro::after{
+content: "";
+position: absolute;
+    border-width:0.5px;
+    border-style:dashed;
+    border-color:#000;
+width:calc(100% - 5px);
+    padding-left:0.1px;
+bottom:-1px;
+left:5px;
+}
+.cus-bg-pro {
+    /* background-color: #fff; */
+transition: all 150ms ease 0s;
+    
+}
+.cus-bg-pro:hover{
+    /* background-color:#f2f2f2; */
+}
+.cus-bg-pro:hover .cus-bd-pro{
+padding: 10px 37px;
+    /* background-color: #fc4c02; */
+border: 1px solid #fc4c02;
+color: #fc4c02;
+bottom:-10px;
+    border-radius: 24px;
+    
+    /* border: 1px solid #ad7753!important; */
+}
+
+.cus-bg-pro:not(:hover) .cus-bd-pro {
+padding: 10px 37px;
+    background-color: #1d7fd2;
+    /* border: 1px solid #fc4c02; */
+color: white;
+bottom:-10px;
+    border-radius: 24px;
+}
+
+
+/*---- reponsive ----*/
+/*----- phone ----*/
+@media (max-width:767px){
+    
+    .cus-sm-img-center{
+    display:block;
+        margin-left:calc(50% - 75px);
+        margin-right:auto;
+        margin-top:0px;
+        max-width:150px;
+    }
+    .cus-banner-img{
+    height:350px;
+        object-fit: cover;
+    }
+    .cus-banner-info{
+    width:100%;
+        font-size:10px;
+    }
+    .cus-banner-info h4{
+        font-size:12px;
+    }
+    
+    .cus-banner .w3-xxxlarge{
+        font-size:24px!important;
+    }
+    .cus-slide-content{
+    position: absolute;
+    top: 30%;
+    left:0px;
+        text-align:right;
+    }
+    .cus-title-service{
+        font-size:16px;
+        font-weight:700;
+    }
+    /* ------ dat left -right ----- */
+    
+    
+    .cus-mobile-order-left {
+    order: 1;
+    position: relative;
+        -webkit-order: 1;
+    }
+    
+    .cus-service-pro .w3-padding{
+    padding:5px!important;
+    }
+    
+    .cus-display-bottom{
+    width:155px;
+        background-color: rgba(22, 22, 22,1);
+    bottom:-5px;
+    }
+    .cus-display-bottom .w3-large{
+        font-size:12px!important;
+    }
+    .cus-sm-home-about{
+    padding: 15px 0px!important;
+    }
+    .cus-sm-home-about p{
+        font-size:10px;
+    }
+    .cus-sm-home-about h3{
+        font-size:40px!important;
+    }
+    
+}
+/* --  tablet ----*/
+@media (min-width: 768px){
+    .cus-title-service:before{
+    background: rgba(0, 0, 0, 0) url(img/default/h2-before.png) no-repeat left top;
+    content: "";
+    display: inline-block;
+    height: 15px;
+        margin-right: 30px;
+        vertical-align: middle;
+    width: 70px;
+    }
+    .cus-title-service:after {
+    background: rgba(0, 0, 0, 0) url(img/default/h2-after.png) no-repeat left top;
+    content: "";
+    display: inline-block;
+    height: 10px;
+        margin-left: 30px;
+        vertical-align: middle;
+    width: 70px;
+    }
+    
+    
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .w3-container{
+    width: 740px;
+    }
+    .cus-sm-img-center{
+    display:block;
+        margin-left:calc(50% - 75px);
+        margin-right:auto;
+        margin-top:0px;
+        max-width:150px;
+    }
+    .cus-banner-img{
+    height:450px;
+        object-fit: cover;
+    }
+    .cus-slide-content{
+    position: absolute;
+    top: 30%;
+    left:0px;
+        text-align:right;
+    }
+    
+}
+/* --- ipad pro --------*/
+@media (min-width: 1024px) and (max-width: 1199px){
+    .w3-container{
+    width: 960px;
+    }
+    .cus-sm-img-center{
+    display:inline-block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:8px;
+        max-width:180px;
+    }
+    .cus-banner-img{
+    width:100%;
+    height:550px;
+        object-fit: cover;
+    }
+}
+
+/* --  computer ----*/
+@media (min-width:1200px){
+    .w3-container{
+    width:1160px;
+    }
+    
+}
+
+/* make the navbar have transistion */
+.transition-navbar {
+transition: all 150ms ease 0s;
+}
+
+.button-service {
+padding: 10px 37px;
+    /* background-color: #fc4c02; */
+border: 1px solid #fc4c02;
+color: #5a5858;
+bottom:-10px;
+    border-radius: 24px;
+    
+}
+</style>
+</head>
+<body>
+
+<header class="w3-top w3-padding-16 transition-navbar" id="navbar">
+<div class="w3-container">
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<a href="javascript:void(0)" style=" transform:translateY(19%);" class="w3-bar-item w3-button w3-left w3-hide-large w3-text-white" onclick="w3_open()">
+<i class="fa fa-bars"></i>
+</a>
+<a href="#home" class="w3-wide">
+<img class="cus-sm-img-center" src="img/logo.png" alt="Logo IP SUPPLY"/>
+</a>
+<!-- Right-sided navbar links -->
+<div class="w3-padding-16 w3-right w3-text-white w3-hide-small w3-hide-medium">
+<a href="/" class="w3-bar-item">HOME</a>
+<a href="http://services.ipsupply.net" class="w3-bar-item cus-menu">SERVICES</a>
+<a href="/category" class="w3-bar-item cus-menu">PRODUCTS</a>
+<a href="/about-us.html" class="w3-bar-item cus-menu">ABOUT US</a>
+<a href="/contact" class="w3-bar-item cus-menu">CONTACT US</a>
+
+<div class="w3-bar-item w3-dropdown-hover">
+<button class="w3-button" style="padding-left:32px;">ACCOUNT <i class="fa fa-caret-down"></i></button>
+<div class="w3-dropdown-content w3-bar-block w3-border">
+<a href="/sign-in" class="w3-bar-item">LOGIN</a>
+<a href="/sign-up" class="w3-bar-item">SIGN UP</a>
+</div>
+</div>
+
+</div>
+
+</div>
+</header>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none;width:100%" id="mySidebar">
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-large w3-right">
+<svg viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px" data-ux="CloseIcon" data-edit-interactive="true" data-close="true" class="x-el x-el-svg c1-1 c1-2 c1-2d c1-2q c1-2h c1-5r c1-5s c1-56 c1-5t c1-5u c1-5v c1-b c1-2n c1-5w c1-5x c1-5y c1-5z x-d-ux x-d-edit-interactive x-d-close"><path fill-rule="evenodd" d="M19.245 4.313a1.065 1.065 0 0 0-1.508 0L11.78 10.27 5.82 4.313A1.065 1.065 0 1 0 4.312 5.82l5.958 5.958-5.958 5.959a1.067 1.067 0 0 0 1.508 1.508l5.959-5.958 5.958 5.958a1.065 1.065 0 1 0 1.508-1.508l-5.958-5.959 5.958-5.958a1.065 1.065 0 0 0 0-1.508"></path></svg>
+</a>
+<a class="w3-bar-item w3-button w3-border-bottom w3-border-grey w3-large" href="/" title="Home">
+<img width="150px" src="img/logo.png" alt="Logo IP SUPPLY" style="margin-left:auto;margin-right:auto;display:block;"/>
+</a>
+
+<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PRODUCTS</a>
+<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+
+<a href="javascript:void(0)" class="w3-bar-item w3-button">
+ACCOUNT <i class="fa fa-caret-down"></i>
+</a>
+<div class="w3-bar-block w3-show w3-medium w3-opacity">
+<a href="/sign-in" class="w3-bar-item w3-button w3-margin-left"><i class="fa fa-caret-right"></i> LOGIN</a>
+<a href="/sign-up" class="w3-bar-item w3-button w3-margin-left"><i class="fa fa-caret-right"></i> SIGN UP</a>
+</div>
+
+<!-- <div class="w3-padding-16 w3-grey w3-text-indigo">
+<h1 class="w3-xlarge w3-center" style="font-weight:700">IP Supply Pty Ltd</h1>
+<div class="w3-text-dark-grey w3-padding" style="font-size:14px">
+<p>
+<i class="fa fa-map-marker w3-text-brown"></i> Unit 8/4A Bachell Ave Lidcombe, NSW 2141 Australia</p>
+<p>
+<i class="fa fa-tty w3-text-brown"></i> <span>+61 2 8061 6886</span>
+<span class="w3-right"><i class="fa fa-envelope w3-text-brown"></i> ips@ipsupply.com.au</span>
+</p>
+<div class="w3-center">
+<a href="tel:0488816886" class="w3-large w3-text-purple" style="font-weight:500" title="Call 04 8881 6886"><i class="fa fa-phone w3-text-brown"></i> 04 8881 6886</a>
+</div>
+</div>
+</div>         -->
+</nav>

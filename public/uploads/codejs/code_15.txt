@@ -1,0 +1,19 @@
+<script>
+         var bLock = false;
+         var dLast = 0;
+         var cp_script = new Array();
+         var cp_token = 'NTh8MTU=';
+         var cp_pid = 100176;
+         var cp_psid = 726;
+         var cp_peid = '';
+         var sd_product_id = '15';
+         var blackListForm = []; 
+         var blackListField = []; 
+         var cp_tracking = true; </script>
+        <!-- SMARTCRM Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NS27Z5D');</script>
+        <!-- End SMARTCRM Manager -->

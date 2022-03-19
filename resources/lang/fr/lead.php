@@ -1,0 +1,50 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'leads' => 'Pistes', 
+'leadsbackup' => 'Importations de prospects', 
+'newupload' => 'Importer des prospects', 
+'new' => 'Créer un lead', 
+'edit' => 'Modifier le fil', 
+'show' => 'Montrer le fil', 
+'delete' => 'Supprimer le fil', 
+'details' => 'Détails de l\'équipe', 
+'creation_date' => 'Date de création', 
+'opportunity' => 'Opportunité', 
+'contact_name' => 'Nom du contact', 
+'country' => 'Pays', 
+'email' => 'Email', 
+'phone' => 'Téléphone', 
+'sales_team' => 'Équipe de vente', 
+'company_name' => 'Nom de la compagnie', 
+'customer' => 'Client', 
+'address' => 'Adresse', 
+'state' => 'Etat', 
+'city' => 'Ville', 
+'select_country' => 'Choisissez le pays', 
+'select_state' => 'Sélectionnez l\'état', 
+'select_city' => 'Sélectionnez une ville', 
+'salesperson' => 'Vendeur', 
+'title' => 'Titre', 
+'function' => 'Type de fonction', 
+'mobile' => 'Mobile', 
+'fax' => 'Fax', 
+'tags' => 'Mots clés', 
+'priority' => 'Priorité', 
+'internal_notes' => 'Notes internes', 
+'calls' => 'Appels', 
+'select_priority' => 'Sélectionnez la priorité', 
+'product_name' => 'Nom du produit', 
+'additionl_info' => 'Information additionnelle', 
+'client_name' => 'Nom du client', 
+'agent_name' => 'Nom d\'agent', 
+'select_title' => 'Sélectionnez le titre', 
+'select_function' => 'sélectionnez le type de fonction', 
+'company_site' => 'Site Web d\'entreprise', 
+'call' => 'Créer un appel', 
+
+ 
+];

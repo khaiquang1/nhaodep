@@ -1,0 +1,366 @@
+<?php echo $this->render('top.phtml');?>
+<!--div mid -->
+<div id="mid_container">
+	<div id="mid" >
+    <!-- tim kiem download-->
+        <div id="search_main">
+                <div id="search">
+                  <form id="form_tim_kiem" name="form_tim_kiem" method="post" action="">
+                  		<div class="div_search_timnhahang">
+                            Tìm nhà hàng<br /><br />
+                            <input name="txtnhahang" type="text" id="txtnhahang" size="32" class="texbox_ " placeholder="Tên nhà hàng"/>
+                        </div>
+                        <div class="div_search_khuvuc">
+                            Khu vực<br /><br />
+                            <input name="txtkhuvuc" type="text" id="txtkhuvuc" size="32" class="texbox_ " placeholder="Tên khu vực"/>
+                        </div>
+                        <div class="div_search_btn"><br /><br />
+                            <input type="submit" name="button" id="button" value="" class="button_search"/>
+                        </div>
+                        <div class="empy_">
+                            <input type="checkbox" name="indendau" id="indendau" />
+                            Chỉ trong mạng lưới ưu đãi của Đến Đâu
+                        </div>
+                  </form>
+                </div>
+                <div id="download">
+                  <form id="form_download" name="form_download" method="post" action="">
+                    <input type="submit" name="download" id="download2" value="Download DS Điểm Đến" class="button_download"/>
+                  </form>
+                </div>
+                
+        </div>
+		<!-- end tim kiem download-->
+        
+        
+    	<div class="vitritrang bogoc1 shadow"><!--vitritrang-->
+        	<span class="icon_home">
+            </span>
+           » &nbsp;&nbsp;&nbsp; &nbsp;Đăng ký
+        </div><!-- end vitritrang-->
+        
+        <div class="title_dangkitaikhoan">
+        	Đăng ký tài khoản của bạn tại dendau.vn
+        </div>
+        
+        <div class="khung_dangkitaikhoan bogoc shadow">
+        	<div class="title_thongtintaikhoan">
+            	Thông tin tài khoản
+            </div>
+            <div class="nd_khung_dangkitaikhoan">
+            	<div class="form_dangkitaikhoan">
+                <form action="" onsubmit="return invalidate_form(this)" method="post" name="profile" enctype="multipart/form-data">
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red"></span> Avatar 
+                    </div>
+                    <div class="title_form_dangkitaikhoan" style="">
+                    	<?php 
+								if($this->user_edit[0]['image_id'] > 0){
+						?>
+									<img src="<?php echo FOLDERWEB; ?>/custom/profile/<?php echo $this->user_edit[0]['account_id'] . "_photo_" . $this->user_edit[0]['image_id'] . "." . $this->image[0]['type']; ?>" alt="" />
+						<?php
+								}else {
+									echo '<img id="imgThumb" src="http://dendau.vn/images/profile_noimage.gif" width="100" height="100">';
+									echo '<span>No Avatar</span>';
+								}
+						?>	
+										<!--<input type="file" name="image"  size="20" class="inputExplodeSmall">	
+                     </div>-->
+					 <div id="swfupload-control">
+						<p>Upload upto 10 image files(jpg, png, gif), each having maximum size of 2MB</p>
+						<input type="button" id="upload_button" />
+						<p id="queuestatus" ></p>
+						<ol id="log"></ol>
+					</div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red"></span> nickname 
+                    </div>
+                    <div class="input_form_dangkitaikhoan">
+                    	<input id="nickname" name="nickname" value="<?php echo $this->user_edit[0]['nickname']; ?>" type="text" class="textbox_login">
+                     </div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red"></span> tự giới thiệu:
+                    </div>
+                    <div class="input_form_dangkitaikhoan">
+                    	<textarea id="person_mesage" name="person_mesage" class="textbox_login" style="width:419px;"><?php echo $this->user_edit[0]['personal_message']; ?></textarea>
+                     </div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red"></span> sinh nhật
+                    </div>
+                    <div class="input_form_dangkitaikhoan">
+                    	<input id="bird_ngay" name="bird_ngay" type="text" value="<?php echo $this->birth_date[2];?>" class="textbox_login" placeholder="Ngày" style="width:35px;"><span style="font-size:25px">/</span>
+										<input id="bird_thang" name="bird_thang" value="<?php echo $this->birth_date[1];?>" type="text" placeholder="Tháng" class="textbox_login" style="width:35px;"><span style="font-size:25px">/</span>
+										<input id="bird_nam" name="bird_nam" value="<?php echo $this->birth_date[0];?>" type="text" placeholder="Năm" class="textbox_login" style="width:70px;">
+                     </div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red">*</span> quê quán
+                    </div>
+                    <div class="input_form_dangkitaikhoan">
+                    	<input id="place" name="place" type="text"  value="<?php echo $this->user_edit[0]['birth_city']; ?>" class="textbox_login" />
+                     </div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    	<span style="color:red"></span> sách yêu thích
+                    </div>
+                    <div class="input_form_textarea">
+                    	<textarea id="book" name="book"  class="textbox_login" style="width:100%; height: 60px"><?php echo $this->user_edit[0]['favorite_books']; ?></textarea>
+                     </div>
+                     
+               		<div class="title_form_dangkitaikhoan">
+                    phim yêu thích
+                    </div>
+                    <div class="input_form_textarea">
+                    	<textarea id="film" name="film" class="textbox_login" style="width:100%; height: 60px"><?php echo $this->user_edit[0]['favorite_movies']; ?></textarea>
+                     </div>
+					 <div class="title_form_dangkitaikhoan">
+                   môn thể thao yêu thích
+                    </div>
+                    <div class="input_form_textarea">
+                    	<textarea id="sport" name="sport" class="textbox_login" style="width:100%; height: 60px"><?php echo $this->user_edit[0]['favorite_sports']; ?></textarea>
+                     </div>
+                      <div class="title_form_dangkitaikhoan">
+                  âm nhạc yêu thích
+                    </div>
+                    <div class="input_form_textarea">
+                    	<textarea id="music" name="music" class="textbox_login" style="width:100%; height: 60px"><?php echo $this->user_edit[0]['favorite_musics']; ?></textarea>
+                     </div>
+					  <div class="title_form_dangkitaikhoan">
+                 món ăn yêu thích
+                    </div>
+                    <div class="input_form_textarea">
+                    	<textarea id="food" name="food" class="textbox_login" style="width:100%; height: 60px"><?php echo $this->user_edit[0]['favorite_foods'];?></textarea>
+                     </div>
+                     <div class="btn_form_dangkitaikhoan" style="margin-top:20px">
+                     	<input type="reset" value="HỦY" />
+                     	<input type="submit" value="GỬI" />
+                     </div>
+
+                  </form>   
+                     
+                </div>
+                <div class="khung_quyenloithanhvien bogoc1 shadow">
+                	<div class="title_quyenloithanhvien">
+                    	QUYỀN LỢI THÀNH VIÊN
+                        <span class="icon_hot_register"></span>
+                    </div>
+                    <ul>
+                    	<li>
+                        	<div class="img_quyenloithanhvien">
+                            	<span class="icon_card_dendau">
+                                </span>
+                            </div>
+                            <div class="nd_quyenloithanhvien">
+                            	Cơ hội tiết kiệm đến
+
+                                <span style="font-size:30px;color:#339900;">90%</span> tại các nhà
+                                hàng, cafe trong hệ 
+                                thống <span style="color:#339900;">www.dendau.vn</span>
+                            </div>
+                        </li>
+                        
+                        <li>
+                        	<div class="img_quyenloithanhvien">
+                            	<span class="icon_hinhnhahang">
+                                </span>
+                            </div>
+                            <div class="nd_quyenloithanhvien">
+                                <span style="font-size:18px;color:#339900;">Khám phá</span> nhiều phong 
+                                cách ẩm thực Việt Nam 
+                                và quốc tế
+                            </div>
+                        </li>
+                        
+                        <li>
+                        	<div class="img_quyenloithanhvien">
+                            	<span class="icon_timkiemnhahang">
+                                </span>
+                            </div>
+                            <div class="nd_quyenloithanhvien">
+                                Tìm kiếm <span style="font-size:18px;color:#339900;">điểm đến </span>
+                                chi tiết, dễ dàng, 
+                                nhanh chóng
+                            </div>
+                        </li>
+                        
+                        <li>
+                        	<div class="img_quyenloithanhvien">
+                            	<span class="icon_doiquatang">
+                                </span>
+                            </div>
+                            <div class="nd_quyenloithanhvien">
+                                Tích lũy điểm <span style="font-size:18px;color:#339900;">đổi quà</span> 
+                                từ hoạt động online, đánh 
+                                giá nhà hàng
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="empy_"></div>
+            </div>
+        </div>
+
+        
+            <div class="empy_">
+            </div>
+        
+    </div> 
+</div>
+<!--end mid -->
+
+<!---->
+
+<div class="vedautrang" >
+        <span class="icon_vedautrang"></span> Về đầu trang
+</div>
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/scriptupload/jquery.swfupload.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/scriptupload/swfupload.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#swfupload-control').swfupload({
+		upload_url: "<?php echo FOLDERWEB; ?>/profile/uploadimage/?account=<?php echo $_SESSION['member']['account_id']; ?>",
+		file_post_name: 'uploadfile',
+		file_size_limit : "2048",
+		file_types : "*.jpg;*.png;*.gif",
+		file_types_description : "Image files",
+		file_upload_limit : 10,
+		flash_url : "<?php echo WEBINFO; ?>/js/swfupload/swfupload.swf",
+		button_image_url : '<?php echo WEBINFO; ?>/js/swfupload/wdp_buttons_upload_114x29.png',
+		button_width : 114,
+		button_height : 29,
+		button_placeholder : $('#upload_button')[0],
+		debug: false
+	})
+	
+		.bind('fileQueued', function(event, file){
+				
+			var listitem='<li id="'+file.id+'" >'+
+				'File: <em>'+file.name+'</em> ('+Math.round(file.size/1024)+' KB) <span class="progressvalue" ></span><input type="hidden" value="'+file.name+'" name="hinh[]">'+
+				'<div class="progressbar" ><div class="progress" ></div></div>'+
+				'<p class="status" >Pending</p>'+
+				'<span class="cancel" >&nbsp;</span>'+
+				'</li>';
+				
+			$('#log').append(listitem);
+			$('li#'+file.id+' .cancel').bind('click', function(){
+				var swfu = $.swfupload.getInstance('#swfupload-control');
+				swfu.cancelUpload(file.id);
+				$('li#'+file.id).slideUp('fast');
+			});
+			// start the upload since it's queued
+			$(this).swfupload('startUpload');
+		})
+		.bind('fileQueueError', function(event, file, errorCode, message){
+			alert('Size of the file '+file.name+' is greater than limit');
+		})
+		.bind('fileDialogComplete', function(event, numFilesSelected, numFilesQueued){
+			$('#queuestatus').text('Files Selected: '+numFilesSelected+' / Queued Files: '+numFilesQueued);
+		})
+		.bind('uploadStart', function(event, file){
+			$('#log li#'+file.id).find('p.status').text('Uploading...');
+			$('#log li#'+file.id).find('span.progressvalue').text('0%');
+			$('#log li#'+file.id).find('span.cancel').hide();
+		})
+		.bind('uploadProgress', function(event, file, bytesLoaded){
+			//Show Progress
+			var percentage=Math.round((bytesLoaded/file.size)*100);
+			$('#log li#'+file.id).find('div.progress').css('width', percentage+'%');
+			$('#log li#'+file.id).find('span.progressvalue').text(percentage+'%');
+		})
+		.bind('uploadSuccess', function(event, file, serverData){
+			var item=$('#log li#'+file.id);
+			item.find('div.progress').css('width', '100%');
+			item.find('span.progressvalue').text('100%');
+			var pathtofile='<img src="<?php echo FOLDERWEB; ?>/hinhtam/'+file.name+'" target="_blank" width="50" style="margin-top:5px">';
+			var del = '<a href="#" onclick="return del(\''+file.id+'\');" style="float:right">Xóa</a>';
+			var val = '<input type="hidden" name="val" id="val" value="'+file.name+'">';
+			item.addClass('success').find('p.status').html(pathtofile + ' | Done!!! | ' + del + val);
+		})
+		.bind('uploadComplete', function(event, file){
+			// upload has completed, try the next one in the queue
+			
+			$(this).swfupload('startUpload');
+			$(".success").fadeOut(500);
+			$(".success:last").fadeIn(500);
+		})
+	
+});	
+function del(fileid){	
+		
+			$('#'+fileid).fadeOut(500);
+			$('#'+fileid).remove();	
+			var formdata = $("#val").serialize();			
+			$.ajax({
+				type: "POST",
+				dataType: "json",
+				url: '<?php echo FOLDERWEB;?>/profile/del',
+				data: formdata,
+				cache: false,
+				success: function(string)
+				{
+				}
+			});
+			return false;
+					
+	}
+function invalidate_form(theForm){
+		var reason = "";
+		  reason += validateNgayThang(document.getElementById('bird_ngay').value,document.getElementById('bird_thang').value,document.getElementById('bird_nam').value);
+		 
+		  if (reason != "") {
+			alert(reason +"Mong bạn vui lòng nhập lại");
+			return false;
+		  }
+		  return true;
+	 }
+	function validateNgayThang(ngay,thang,nam) {
+		var error = "";
+		if (isNaN(ngay)) {  
+			error = "ngày nhập vào phải là số.\n";return error;
+		}
+		if (isNaN(thang)) {  
+			error = " tháng nhập vào phải là số.\n";return error;
+		}
+		if (isNaN(nam)) {  
+			error = " năm nhập vào phải là số.\n";return error;
+		}
+		if(ngay < 0){
+			error = " ngày phải là số dương.\n";return error;
+		}
+		if(thang < 0){
+			error = " tháng phải là số dương.\n";return error;
+		}
+		if(nam < 0){
+			error = " năm phải là số dương.\n";return error;
+		}
+		if(nam < 1900){  
+			error = " bạn nhập năm quá nhỏ.\n";return error;
+		}
+		if(nam > 1999){  
+			error = " Bạn phải trên 13 tuổi.\n";return error;
+		}
+		if(thang == 2){
+			if(ngay > 29){
+				error = "tháng 2 chỉ có tối đa 29 ngày.\n";return error;
+			}
+		}
+		if(ngay > 31){
+			error = "trong một tháng chỉ có tối đa 31 ngày.\n";return error;
+		}
+		if(thang > 12){
+			error = "trong một năm chỉ có tối đa 12 tháng.\n";return error;
+		}
+		return error; 
+	}
+    function trim(s)
+    {
+      return s.replace(/^\s+|\s+$/, '');
+    }
+	
+
+</script>
+<?php echo $this->render('bottom.phtml');?>

@@ -1,0 +1,3 @@
+Time : 17:59:01
+SQLSTATE[42S02]: Base table or view not found: 1146 Table 'uk_landing_test.fruit' doesn't exist
+Raw SQL : INSERT INTO fruit(name,phone,email,city,utm_medium,utm_source,utm_campaign,date_create) VALUES(?,?,?,?,?,?,?,?)

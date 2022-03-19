@@ -1,0 +1,12 @@
+.list-inline>li{
+    display: inline-block;
+    padding: 18px 52px 18px 51px;!important;
+}
+
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0,0);
+}

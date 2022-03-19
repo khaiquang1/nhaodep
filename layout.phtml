@@ -1,0 +1,67 @@
+<?php 
+    $children = $this->viewModel()->getCurrent()->getChildren();
+    $datas = $children[0];
+    $favicon = $datas->favicon;
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta name="google-site-verification" content="Jftwx0qdxYqnCbYkt-WwBQ_nRhWokkZrwssOs2haXbQ" />
+        <?php   echo $this->headTitle();
+                echo $this->headMeta();
+                echo $this->Html()
+                        ->setContentview( $this )
+                        ->setDatas( $datas )
+                        ->getMetaHeader();
+                echo $this->CSS()
+                        ->setContentview( $this )
+                        ->setDatas( $datas )
+                        ->setHeadLink( array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . $favicon) )
+                        ->getStylesheet()
+                        ->getHeadLink();
+                echo $this->JS()
+                        ->setContentview( $this )
+                        ->setDatas( $datas )
+                        ->getJavascriptHead();
+        ?>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K7X8F9R');</script>
+<!-- End Google Tag Manager -->
+    </head>
+    <body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7X8F9R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="page <?php echo $this->CSS()
+                                        ->setContentview( $this )
+                                        ->setDatas( $datas )
+                                        ->getClassConten(); ?>" >
+            <?php   echo $this->partial('app/header', array('datas' => $datas) );
+                    echo '<div class="clearfix" data-pjax-container="Main" role="main" itemprop="mainContentOfPage" >'.$this->content. '</div>';
+                    echo $this->partial('app/footer', array('datas' => $datas) );
+            ?>
+        </div>
+
+        <?php   echo  $this->JS()
+                        ->setContentview( $this )
+                        ->setDatas( $datas )
+                        ->getJavascriptFoot();
+                echo  $this->JS()
+                        ->setContentview( $this )
+                        ->setDatas( $datas )
+                        ->getJavascripts()
+                        ->getHeadScript();
+                echo $this->inlineScript();
+        ?>
+    </body>
+</html>

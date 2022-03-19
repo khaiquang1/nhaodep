@@ -1,0 +1,52 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'sales_orders' => 'Ordens de venda', 
+'order_number' => 'Número do pedido', 
+'date' => 'Data de início', 
+'customer' => 'Cliente', 
+'salesperson' => 'Pessoa de vendas', 
+'total' => 'Total', 
+'status' => 'Status', 
+'sale_number' => 'Número de venda', 
+'new' => 'Novos pedidos de vendas', 
+'show' => 'Mostrar ordens de venda', 
+'edit' => 'Editar ordens de venda', 
+'delete' => 'Excluir pedidos de venda', 
+'shipping_address' => 'Endereço de entrega', 
+'sales_order_no' => 'Pedido de venda não', 
+'sales_order_date' => 'Data do pedido de venda', 
+'product' => 'produtos', 
+'quantity' => 'Quantidade', 
+'unit_price' => 'Preço unitário', 
+'taxes' => 'Impostos', 
+'subtotal' => 'Subtotal', 
+'untaxed_amount' => 'Quantidade não tributada', 
+'products' => 'Produtos', 
+'need_to_add_products' => 'Precisa adicionar produtos!', 
+'discount' => 'Desconto', 
+'final_price' => 'Preço final', 
+'salesorder_to' => 'ORDEM DE VENDAS PARA', 
+'create' => 'Criar pedido de venda', 
+'agent_name' => 'Nome do agente', 
+'invoice_list' => 'Lista convertida de fatura', 
+'delete_list' => 'Lista excluída', 
+'show_delete_list' => 'Mostrar lista de exclusão', 
+'restore_delete_list' => 'Restaurar lista de exclusão', 
+'salesorder_invoice_list' => 'Lista de faturas de ordem de venda', 
+'success' => 'Mail é enviado!', 
+'main_staff' => 'Cajado Principal', 
+'draft_salesorder' => 'Projeto de ordem de venda', 
+'send_salesorder' => 'Enviar ordem de venda', 
+'draft_salesorders' => 'Ordens de vendas de rascunho', 
+'exp_date' => 'Data de validade', 
+'payment_term' => 'Termo de pagamento', 
+'expired' => 'Expirado', 
+'salesorder_expired' => 'A ordem do cliente expirou', 
+'salesorder_will_expire' => 'A ordem do cliente expira dentro de alguns dias', 
+
+ 
+];

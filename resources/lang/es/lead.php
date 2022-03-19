@@ -1,0 +1,50 @@
+<?php 
+ 
+/* Translation generated with Laravel gTranslator */
+ 
+ return [  
+ 
+ 'leads' => 'Conductores', 
+'leadsbackup' => 'Leads Import', 
+'newupload' => 'Subir leads', 
+'new' => 'Crear Plomo', 
+'edit' => 'Editar Plomo', 
+'show' => 'Mostrar plomo', 
+'delete' => 'Eliminar el plomo', 
+'details' => 'Detalles del equipo', 
+'creation_date' => 'Fecha de creación', 
+'opportunity' => 'Oportunidad', 
+'contact_name' => 'Nombre de contacto', 
+'country' => 'País', 
+'email' => 'Email', 
+'phone' => 'Teléfono', 
+'sales_team' => 'Equipo de ventas', 
+'company_name' => 'nombre de empresa', 
+'customer' => 'Cliente', 
+'address' => 'Dirección', 
+'state' => 'Estado', 
+'city' => 'Ciudad', 
+'select_country' => 'Seleccionar país', 
+'select_state' => 'Seleccione estado', 
+'select_city' => 'Ciudad selecta', 
+'salesperson' => 'Persona de ventas', 
+'title' => 'Título', 
+'function' => 'Tipo de función', 
+'mobile' => 'Móvil', 
+'fax' => 'Fax', 
+'tags' => 'Etiquetas', 
+'priority' => 'Prioridad', 
+'internal_notes' => 'Notas internas', 
+'calls' => 'Llamadas', 
+'select_priority' => 'Seleccionar prioridad', 
+'product_name' => 'nombre del producto', 
+'additionl_info' => 'Información adicional', 
+'client_name' => 'nombre del cliente', 
+'agent_name' => 'Nombre del agente', 
+'select_title' => 'Seleccionar título', 
+'select_function' => 'seleccione el tipo de función', 
+'company_site' => 'Página Web de la compañía', 
+'call' => 'Crear llamada', 
+
+ 
+];

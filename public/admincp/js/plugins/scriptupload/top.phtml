@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo $this->headertag_title?></title>
+<meta name="author" content="Dendau.vn" />
+<meta name="description" content="<?php echo $this->headertag_description?>" />
+<meta name="keywords" content="<?php echo $this->headertag_keywords?>" />
+<link href="<?php echo WEBINFO?>/css/main.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_home.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/common.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_reviewpage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<?php echo WEBINFO?>/js/groupslide/css/style_flash_top.css" />
+<link href="<?php echo WEBINFO?>/css/boxy.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/listting_khuyenmai.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_chitietkhuyenmai.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/cotngang.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_login.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_confirm.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_advanceSearch.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_form_login.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_memberregister.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_listingquatang.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_memberProfile.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo WEBINFO?>/css/style_dcarHome.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/js/jquery-1.7.2.min.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/js/jquery-1.3.2.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/js/jquery.swfupload.js"></script>
+<script language="javascript" type="text/javascript" src="<?php echo WEBINFO?>/js/swfupload.js"></script>
+
+</head>
+<body>
+<!-- link head --->
+<?php
+	if(isset($_COOKIE['dendautp']) && $_COOKIE['dendautp']!=""){
+		$value=$_COOKIE['dendautp'];
+	}
+?>
+<div id="logo_login_container">
+	<div id="logo_login">
+    	<div id="divlogo">
+        	<a href="<?php echo FOLDERWEB;?>" title="Den dau, noi moi nguoi can tim"><img src="<?php echo WEBINFO?>/images/logobong.png" width="225"/></a>
+        </div>
+        <div id="divlogin">
+        	<div id="dang_ki">
+			<div id="link_head_right">
+            <ul>
+				<li class="sau"><a href="http://www.facebook.com/www.dendau.vn" target="_blank"><span class="header_f"></span> &nbsp;</a></li>
+				<?php
+				if(!isset($_SESSION["member"]) || $_SESSION["member"]["account_id"]==""){
+				?>
+				<div id="accountid">
+				<li class="bon"><a  href="#" onclick="return showregister();"><span class="header_but"></span> &nbsp;Đăng ký</a></li>
+				<li class="nam"><a href="#" onclick="return showlogin();"><span class="header_key"></span> &nbsp;Đăng nhập</a></li>
+				</div>
+				<?php }else{?>
+				<div id="accountinfo">
+				<li class="sau"><a href="<?php echo FOLDERWEB;?>/index/logout"><span class="header_key"></span> &nbsp;Thoát</a></li>
+				<li class="nam"><a href="<?php echo FOLDERWEB;?>/profile"><span class="header_key"></span> &nbsp;Chào <?php echo string_substr($_SESSION["member"]["realname"],0,5);?></a></li>
+				<li class="nam"><a href="<?php echo FOLDERWEB;?>/profile"><span class="header_key"></span> &nbsp;Điểm hiện tại của bạn <?php echo $_SESSION["member"]["points"];?></a></li>
+				</div>
+				<?php }?>
+				<li class="hai"><a href="#"><span class="header_hcm"></span> &nbsp; <?php if($GLOBALS["location"]=="hn-city"){ echo "Hà Nội"; }else{ echo "Hồ Chí Minh";}?></a></li>
+        		<li class="mot"><a href="#">(Bạn đến từ nơi khác?)</a></li>
+				
+            </ul>
+        </div>
+			</div>
+            <div id="_vitri">
+            	<form id="location" name="location" method="post" action="">
+            	  <label>
+            	    <select name="list_vitri" id="list_vitri" onchange=" return derectlink('<?php echo FOLDERWEB;?>/setcookie/?tp='+this.value);">
+                    	<option value="hcm-city" <?php if($GLOBALS["location"]=="hcm-city"){?>selected<?php }?>>Hồ chí minh</option>
+                        <option value="hn-city" <?php if($GLOBALS["location"]=="hn-city"){?>selected<?php }?>>Hà Nội</option>
+                    </select>
+          	    </label>
+          	  	</form>
+            </div>
+        </div>
+		
+    </div>
+</div>
+<script language='javascript'>
+	function derectlink(link){
+		window.location.href=link;
+	}
+</script>
+<!--navigation-->
+<div id="navigation_container">
+	<div id="navigation">
+    	<div id="text_nhahang_top">
+        	nhà hàng
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="<?php echo FOLDERWEB;?>" class="navigation_active">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="<?php echo FOLDERWEB;?>/listing">Điểm Đến</a>
+                </li>
+                <li>
+                    <a href="<?php echo FOLDERWEB;?>/deal" class="navigation_khuyenmai">Khuyến Mại</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end navigation-->

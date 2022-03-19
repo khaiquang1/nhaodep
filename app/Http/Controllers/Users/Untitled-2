@@ -1,0 +1,135 @@
+<script language="javascript">
+window.fbAsyncInit = function() {
+FB.init({
+xfbml            : true,
+version          : 'v8.0'
+});
+};
+
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+$ = jQuery.noConflict();
+if (typeof bLock === 'undefined') {
+    var bLock = false;
+}
+if (typeof dLast === 'undefined') {
+    var dLast = 0;
+}
+if (typeof cp_script === 'undefined') {
+var cp_script = new Array();
+}
+if (typeof cp_token === 'undefined') {
+var cp_token = "Cwn1IegnP2yGH52mlILQeQVI8TIeg-O6QTveKVFAD38=";
+}
+if (typeof cp_pid === 'undefined') {
+var cp_pid = 100176;
+}
+if (typeof cp_psid === 'undefined') {
+var cp_psid = 726;
+}
+if (typeof cp_peid === 'undefined') {
+var cp_peid = "";
+}
+if (typeof blackListForm === 'undefined') {
+var blackListForm = []; 
+}
+if (typeof blackListField === 'undefined') {
+var blackListField = []; 
+}
+if (typeof cp_tracking === 'undefined') {
+var cp_tracking = true; 
+}
+if (typeof sd_product_id === 'undefined') {
+var sd_product_id = 1; 
+}
+function cp_loaddscript(array, callback) {
+var loader = function (src, handler) {
+var script = document.createElement("script");
+script.src = src;
+script.onload = script.onreadystatechange = function () {
+script.onreadystatechange = script.onload = null;
+handler();
+}
+var head = document.getElementsByTagName("head")[0];
+(head || document.body).appendChild(script);
+};
+(function run() {
+if (array.length != 0) {
+loader(array.shift(), run);
+} else {
+callback && callback();
+}
+})();
+}
+
+if (null==window.jQuery||null==$||$.fn.jquery.replace(/\.(\d)/g,".0$1").replace(/\.0(\d{2})/g,".$1") < "1.07.00"){
+cp_script.push('https://cdn2.salesdy.com/js/jquery.1.12.4.min.js');
+}
+var phone_f="0936482596"; //Số hotline
+var page_f="https://www.facebook.com/kimnhungtoeic/inbox/"; //LInk page
+var addrress_f="https://g.page/kimnhungtoeic?share"; //Link địa chỉ google
+var page_id_f="203755330133620";
+var ga_f="UA-109199999-1";
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+return false;
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');    
+if(ga_f!="" && ga_f!=undefined){
+    ga('create', ga_f, 'auto');
+}
+function writeCookieOnclick(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function readCookie(name){var i,c,ca,nameEQ=name+"=";ca=document.cookie.split(';');for(i=0;i<ca.length;i++){c=ca[i];while(c.charAt(0)==' '){c=c.substring(1,c.length)}if(c.indexOf(nameEQ)==0){return c.substring(nameEQ.length,c.length)}}return''}
+$(document).ready(function(){
+    setTimeout(function(){
+        $cookiesite=readCookie("c_faster_name");
+        $cookiechat=readCookie("chatCookieSite");
+      $linkmessenger=page_f;
+        if(page_id_f!=""){
+           $linkmessenger="http://m.me/"+page_id_f+"?ref="+$cookiesite;
+        }
+        $("body").append("<link rel='stylesheet' href='//fastercrm.com/css/partner/kimnhung.css?v=16' type='text/css' media='all' />");
+        $html='<div class="fastercrmBox">'; 
+        $html+="<div class=\"map\"><a class=\"Mapaddress is-animating\" href='"+addrress_f+"' target=\"_blank\" onclick=\"return ga('send', 'event', 'Click To Map', 'View', 'View Map'), gtag_report_conversion('"+addrress_f+"');\" >Map</a></div>";
+        $html+="<div class=\"hotline\"><a class=\"Phone is-animating\" href=\"tel:"+phone_f+"\" onclick=\"ga('send', 'event', 'Click To Call', 'Call', 'ClickHotline'),gtag_report_conversion('tel:"+phone_f+"');\">"+phone_f+"</a></div>";
+        
+        
+        if($cookiechat=="" || $cookiechat==undefined){
+            $html+="<div class=\"facebook\"><a class=\"Facebookchat is-animating\" onclick=\"ga('send', 'event', 'Click To Mess', 'Chat', 'ChatWithBox'),gtag_report_conversion('"+$linkmessenger+"');\" href=\'"+$linkmessenger+"\' >Facebook</a></div>";
+            writeCookieOnclick("chatCookieSite",$cookiesite,30);
+        }else{         
+           $html+="<div class=\"facebook\"><a class=\"Facebookchat is-animating\" target=\"_blank\" href=\'"+$linkmessenger+"\' onclick=\"ga('send', 'event', 'Click To Mess', 'Chat', 'ChatWithChatBot'),gtag_report_conversion('"+$linkmessenger+"');\">Facebook</a></div>";
+        } 
+      $html+='</div>';
+        $("body").append($html);
+    }, 1000);
+    $("body").append("<div id=\"fb-root\"></div>");
+    $("body").append("<div class=\"fb-customerchat\" attribution=setup_tool page_id=\"112905952502420\" logged_in_greeting=\"Chào bạn! NewTechShop có thể hổ trợ gì cho bạn?\" logged_out_greeting=\"Chào bạn! KimnhungToeic có thể hổ trợ gì cho bạn?\"></div>");
+});
+  </script>
